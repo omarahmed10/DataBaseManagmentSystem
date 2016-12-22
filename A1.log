@@ -1,0 +1,554 @@
+<<<<<<< HEAD
+2016-12-17 23:10:51,922 DEBUG jdbc.Driver (Driver.java:59) - URL "jdbc:xmldb://localhost" and Properties "{path=C:\Users\hp\AppData\Local\Temp\jdbc\46106}" are being connected
+2016-12-17 23:10:51,927 DEBUG jdbc.Driver (Driver.java:40) - URL  "jdbc:xmldb://localhost"  is being understood
+2016-12-17 23:10:51,955 DEBUG jdbc.Connection (Connection.java:59) - Statement is being created
+2016-12-17 23:11:05,327 INFO  jdbc.Statement (Statement.java:76) - Command  'aboelhamd is awesome' entered execution process
+2016-12-17 23:11:05,328 DEBUG dbmsController.DbmsController (DbmsController.java:30) - Command  'aboelhamd is awesome' is being validated
+2016-12-17 23:11:05,363 FATAL dbmsController.Controller (Controller.java:357) - Command  'aboelhamd is awesome' is not valid
+2016-12-17 23:11:20,313 INFO  jdbc.Statement (Statement.java:76) - Command  'create database d1' entered execution process
+2016-12-17 23:11:20,314 DEBUG dbmsController.DbmsController (DbmsController.java:30) - Command  'create database d1' is being validated
+2016-12-17 23:11:20,325 DEBUG dbmsController.DbmsController (DbmsController.java:35) - Command  'create database d1' is being executed
+2016-12-17 23:11:20,326 DEBUG dbms.DataBaseMS (DataBaseMS.java:110) - Creating database : d1
+2016-12-17 23:11:20,335 INFO  jdbc.Statement (Statement.java:105) - Command  'create database d1' executed successfully
+=======
+2016-12-17 20:39:31,016 DEBUG jdbc.Driver (Driver.java:59) - URL "jdbc:altdb://localhost" and Properties "{path=/tmp/jdbc/91386}" are being connected
+2016-12-17 20:39:31,017 DEBUG jdbc.Driver (Driver.java:40) - URL  "jdbc:altdb://localhost"  is being understood
+2016-12-17 20:39:31,024 DEBUG jdbc.Connection (Connection.java:64) - Statement is being created
+2016-12-17 20:39:31,024 DEBUG jdbc.Statement (Statement.java:76) - Command  'CREATE DATABASE TestDB_Create' is being executed
+2016-12-17 20:39:31,024 DEBUG dbmsController.DbmsController (DbmsController.java:30) - Command  'CREATE DATABASE TestDB_Create' is being validated
+2016-12-17 20:39:31,033 DEBUG dbmsController.DbmsController (DbmsController.java:35) - Command  'CREATE DATABASE TestDB_Create' is being executed
+2016-12-17 20:39:31,034 DEBUG dbms.DataBaseMS (DataBaseMS.java:110) - Creating database : TestDB_Create
+2016-12-17 20:39:31,036 DEBUG jdbc.Statement (Statement.java:76) - Command  'USE TestDB_Create' is being executed
+2016-12-17 20:39:31,036 DEBUG dbmsController.DbmsController (DbmsController.java:30) - Command  'USE TestDB_Create' is being validated
+2016-12-17 20:39:31,039 DEBUG dbmsController.DbmsController (DbmsController.java:35) - Command  'USE TestDB_Create' is being executed
+2016-12-17 20:39:31,040 DEBUG dbms.DataBaseMS (DataBaseMS.java:140) - Using database : TestDB_Create
+2016-12-17 20:39:31,040 DEBUG jdbc.Statement (Statement.java:68) - Statement is being closed
+2016-12-17 20:39:31,040 DEBUG jdbc.Connection (Connection.java:64) - Statement is being created
+2016-12-17 20:39:31,040 DEBUG jdbc.Statement (Statement.java:76) - Command  'CREATE TABLE table_name13(column_name1 varchar, column_name2 int, column_name3 varchar)' is being executed
+2016-12-17 20:39:31,040 DEBUG dbmsController.DbmsController (DbmsController.java:30) - Command  'CREATE TABLE table_name13(column_name1 varchar, column_name2 int, column_name3 varchar)' is being validated
+2016-12-17 20:39:31,043 DEBUG dbmsController.DbmsController (DbmsController.java:35) - Command  'CREATE TABLE table_name13(column_name1 varchar, column_name2 int, column_name3 varchar)' is being executed
+2016-12-17 20:39:31,046 DEBUG dbms.DataBaseMS (DataBaseMS.java:44) - Creating table : table_name13  with columns : [dbms.Column@5891e32e, dbms.Column@cb0ed20, dbms.Column@8e24743]  in format :ALTDB
+2016-12-17 20:39:31,084 DEBUG jdbc.Statement (Statement.java:187) - Update command  'INSERT INTO table_name13(column_NAME1, COLUMN_name3, column_name2) VALUES ('value1', 'value3', 4)' is being executed
+2016-12-17 20:39:31,085 DEBUG dbmsController.DbmsController (DbmsController.java:30) - Command  'INSERT INTO table_name13(column_NAME1, COLUMN_name3, column_name2) VALUES ('value1', 'value3', 4)' is being validated
+2016-12-17 20:39:31,088 DEBUG dbmsController.DbmsController (DbmsController.java:35) - Command  'INSERT INTO table_name13(column_NAME1, COLUMN_name3, column_name2) VALUES ('value1', 'value3', 4)' is being executed
+2016-12-17 20:39:31,089 DEBUG dbms.DataBaseMS (DataBaseMS.java:32) - Inserting into table : table_name13  values : [value1, value3, 4]  in columns : [column_NAME1, COLUMN_name3, column_name2]
+2016-12-17 20:39:31,090 DEBUG dbms.DataBaseMS (DataBaseMS.java:70) - Selecting columns : null  from table : table_name13
+2016-12-17 20:39:31,090 DEBUG jdbc.Statement (Statement.java:187) - Update command  'INSERT INTO table_name13(column_NAME1, column_name2, COLUMN_name3) VALUES ('value1', 4, 'value3')' is being executed
+2016-12-17 20:39:31,090 DEBUG dbmsController.DbmsController (DbmsController.java:30) - Command  'INSERT INTO table_name13(column_NAME1, column_name2, COLUMN_name3) VALUES ('value1', 4, 'value3')' is being validated
+2016-12-17 20:39:31,093 DEBUG dbmsController.DbmsController (DbmsController.java:35) - Command  'INSERT INTO table_name13(column_NAME1, column_name2, COLUMN_name3) VALUES ('value1', 4, 'value3')' is being executed
+2016-12-17 20:39:31,094 DEBUG dbms.DataBaseMS (DataBaseMS.java:32) - Inserting into table : table_name13  values : [value1, 4, value3]  in columns : [column_NAME1, column_name2, COLUMN_name3]
+2016-12-17 20:39:31,095 DEBUG dbms.DataBaseMS (DataBaseMS.java:70) - Selecting columns : null  from table : table_name13
+2016-12-17 20:39:31,095 DEBUG jdbc.Statement (Statement.java:187) - Update command  'INSERT INTO table_name13(column_name1, COLUMN_NAME3, column_NAME2) VALUES ('value2', 'value4', 5)' is being executed
+2016-12-17 20:39:31,095 DEBUG dbmsController.DbmsController (DbmsController.java:30) - Command  'INSERT INTO table_name13(column_name1, COLUMN_NAME3, column_NAME2) VALUES ('value2', 'value4', 5)' is being validated
+2016-12-17 20:39:31,097 DEBUG dbmsController.DbmsController (DbmsController.java:35) - Command  'INSERT INTO table_name13(column_name1, COLUMN_NAME3, column_NAME2) VALUES ('value2', 'value4', 5)' is being executed
+2016-12-17 20:39:31,098 DEBUG dbms.DataBaseMS (DataBaseMS.java:32) - Inserting into table : table_name13  values : [value2, value4, 5]  in columns : [column_name1, COLUMN_NAME3, column_NAME2]
+2016-12-17 20:39:31,098 DEBUG dbms.DataBaseMS (DataBaseMS.java:70) - Selecting columns : null  from table : table_name13
+2016-12-17 20:39:31,099 DEBUG jdbc.Statement (Statement.java:187) - Update command  'INSERT INTO table_name13(column_name1, COLUMN_NAME3, column_NAME2) VALUES ('value5', 'value6', 6)' is being executed
+2016-12-17 20:39:31,099 DEBUG dbmsController.DbmsController (DbmsController.java:30) - Command  'INSERT INTO table_name13(column_name1, COLUMN_NAME3, column_NAME2) VALUES ('value5', 'value6', 6)' is being validated
+2016-12-17 20:39:31,101 DEBUG dbmsController.DbmsController (DbmsController.java:35) - Command  'INSERT INTO table_name13(column_name1, COLUMN_NAME3, column_NAME2) VALUES ('value5', 'value6', 6)' is being executed
+2016-12-17 20:39:31,101 DEBUG dbms.DataBaseMS (DataBaseMS.java:32) - Inserting into table : table_name13  values : [value5, value6, 6]  in columns : [column_name1, COLUMN_NAME3, column_NAME2]
+2016-12-17 20:39:31,102 DEBUG dbms.DataBaseMS (DataBaseMS.java:70) - Selecting columns : null  from table : table_name13
+2016-12-17 20:39:31,102 DEBUG jdbc.Statement (Statement.java:159) - Query 'SELECT column_name1 FROM table_name13 WHERE coluMN_NAME2 < 5' is being executed
+2016-12-17 20:39:31,102 DEBUG dbmsController.DbmsController (DbmsController.java:30) - Command  'SELECT column_name1 FROM table_name13 WHERE coluMN_NAME2 < 5' is being validated
+2016-12-17 20:39:31,104 DEBUG dbmsController.DbmsController (DbmsController.java:35) - Command  'SELECT column_name1 FROM table_name13 WHERE coluMN_NAME2 < 5' is being executed
+2016-12-17 20:39:31,105 DEBUG condition.ConditionFinder (ConditionFinder.java:63) - Where condirion is being checked and executed
+2016-12-17 20:39:31,105 DEBUG dbms.DataBaseMS (DataBaseMS.java:70) - Selecting columns : null  from table : table_name13
+2016-12-17 20:39:31,106 DEBUG dbms.DataBaseMS (DataBaseMS.java:63) - Selecting columns : [column_name1] with rows of numbers : [0, 1]  from table : table_name13
+2016-12-17 20:39:31,108 DEBUG jdbc.Statement (Statement.java:68) - Statement is being closed
+2016-12-17 20:39:31,109 DEBUG jdbc.Connection (Connection.java:53) - Connection is being closed
+2016-12-17 20:39:31,109 DEBUG jdbc.Statement (Statement.java:68) - Statement is being closed
+2016-12-17 20:39:31,109 DEBUG jdbc.Driver (Driver.java:59) - URL "jdbc:altdb://localhost" and Properties "{path=/tmp/jdbc/84711}" are being connected
+2016-12-17 20:39:31,110 DEBUG jdbc.Driver (Driver.java:40) - URL  "jdbc:altdb://localhost"  is being understood
+2016-12-17 20:39:31,111 DEBUG jdbc.Connection (Connection.java:64) - Statement is being created
+2016-12-17 20:39:31,111 DEBUG jdbc.Statement (Statement.java:76) - Command  'CREATE DATABASE TestDB_Create' is being executed
+2016-12-17 20:39:31,111 DEBUG dbmsController.DbmsController (DbmsController.java:30) - Command  'CREATE DATABASE TestDB_Create' is being validated
+2016-12-17 20:39:31,116 DEBUG dbmsController.DbmsController (DbmsController.java:35) - Command  'CREATE DATABASE TestDB_Create' is being executed
+2016-12-17 20:39:31,116 DEBUG dbms.DataBaseMS (DataBaseMS.java:110) - Creating database : TestDB_Create
+2016-12-17 20:39:31,117 DEBUG jdbc.Statement (Statement.java:76) - Command  'USE TestDB_Create' is being executed
+2016-12-17 20:39:31,117 DEBUG dbmsController.DbmsController (DbmsController.java:30) - Command  'USE TestDB_Create' is being validated
+2016-12-17 20:39:31,118 DEBUG dbmsController.DbmsController (DbmsController.java:35) - Command  'USE TestDB_Create' is being executed
+2016-12-17 20:39:31,118 DEBUG dbms.DataBaseMS (DataBaseMS.java:140) - Using database : TestDB_Create
+2016-12-17 20:39:31,119 DEBUG jdbc.Statement (Statement.java:68) - Statement is being closed
+2016-12-17 20:39:31,119 DEBUG jdbc.Connection (Connection.java:64) - Statement is being created
+2016-12-17 20:39:31,119 DEBUG jdbc.Statement (Statement.java:76) - Command  'CREATE TABLE table_name8(column_name1 varchar, column_name2 int,column_name3 date, column_name4 float)' is being executed
+2016-12-17 20:39:31,119 DEBUG dbmsController.DbmsController (DbmsController.java:30) - Command  'CREATE TABLE table_name8(column_name1 varchar, column_name2 int,column_name3 date, column_name4 float)' is being validated
+2016-12-17 20:39:31,121 DEBUG dbmsController.DbmsController (DbmsController.java:35) - Command  'CREATE TABLE table_name8(column_name1 varchar, column_name2 int,column_name3 date, column_name4 float)' is being executed
+2016-12-17 20:39:31,122 DEBUG dbms.DataBaseMS (DataBaseMS.java:44) - Creating table : table_name8  with columns : [dbms.Column@3444d69d, dbms.Column@1372ed45, dbms.Column@6a79c292, dbms.Column@37574691]  in format :ALTDB
+2016-12-17 20:39:31,123 DEBUG jdbc.Statement (Statement.java:187) - Update command  'INSERT INTO table_name8(column_NAME1, COLUMN_name3, column_name2,column_name4) VALUES ('value1', '2011-01-25', 3, 1.3)' is being executed
+2016-12-17 20:39:31,124 DEBUG dbmsController.DbmsController (DbmsController.java:30) - Command  'INSERT INTO table_name8(column_NAME1, COLUMN_name3, column_name2,column_name4) VALUES ('value1', '2011-01-25', 3, 1.3)' is being validated
+2016-12-17 20:39:31,124 DEBUG dbmsController.DbmsController (DbmsController.java:35) - Command  'INSERT INTO table_name8(column_NAME1, COLUMN_name3, column_name2,column_name4) VALUES ('value1', '2011-01-25', 3, 1.3)' is being executed
+2016-12-17 20:39:31,125 DEBUG dbms.DataBaseMS (DataBaseMS.java:32) - Inserting into table : table_name8  values : [value1, 2011-01-25, 3, 1.3]  in columns : [column_NAME1, COLUMN_name3, column_name2, column_name4]
+2016-12-17 20:39:31,127 DEBUG dbms.DataBaseMS (DataBaseMS.java:70) - Selecting columns : null  from table : table_name8
+2016-12-17 20:39:31,128 DEBUG jdbc.Statement (Statement.java:187) - Update command  'INSERT INTO table_name8(column_NAME1, COLUMN_name3, column_name2,column_name4) VALUES ('value1', '2011-01-28', 3456, 1.01)' is being executed
+2016-12-17 20:39:31,128 DEBUG dbmsController.DbmsController (DbmsController.java:30) - Command  'INSERT INTO table_name8(column_NAME1, COLUMN_name3, column_name2,column_name4) VALUES ('value1', '2011-01-28', 3456, 1.01)' is being validated
+2016-12-17 20:39:31,129 DEBUG dbmsController.DbmsController (DbmsController.java:35) - Command  'INSERT INTO table_name8(column_NAME1, COLUMN_name3, column_name2,column_name4) VALUES ('value1', '2011-01-28', 3456, 1.01)' is being executed
+2016-12-17 20:39:31,130 DEBUG dbms.DataBaseMS (DataBaseMS.java:32) - Inserting into table : table_name8  values : [value1, 2011-01-28, 3456, 1.01]  in columns : [column_NAME1, COLUMN_name3, column_name2, column_name4]
+2016-12-17 20:39:31,132 DEBUG dbms.DataBaseMS (DataBaseMS.java:70) - Selecting columns : null  from table : table_name8
+2016-12-17 20:39:31,132 DEBUG jdbc.Statement (Statement.java:187) - Update command  'INSERT INTO table_name8(column_NAME1, COLUMN_name3, column_name2,column_name4) VALUES ('value2', '2011-02-11', -123, 3.14159)' is being executed
+2016-12-17 20:39:31,132 DEBUG dbmsController.DbmsController (DbmsController.java:30) - Command  'INSERT INTO table_name8(column_NAME1, COLUMN_name3, column_name2,column_name4) VALUES ('value2', '2011-02-11', -123, 3.14159)' is being validated
+2016-12-17 20:39:31,133 DEBUG dbmsController.DbmsController (DbmsController.java:35) - Command  'INSERT INTO table_name8(column_NAME1, COLUMN_name3, column_name2,column_name4) VALUES ('value2', '2011-02-11', -123, 3.14159)' is being executed
+2016-12-17 20:39:31,134 DEBUG dbms.DataBaseMS (DataBaseMS.java:32) - Inserting into table : table_name8  values : [value2, 2011-02-11, -123, 3.14159]  in columns : [column_NAME1, COLUMN_name3, column_name2, column_name4]
+2016-12-17 20:39:31,135 DEBUG dbms.DataBaseMS (DataBaseMS.java:70) - Selecting columns : null  from table : table_name8
+2016-12-17 20:39:31,135 DEBUG jdbc.Statement (Statement.java:187) - Update command  'UPDATE table_name8 SET COLUMN_NAME2=222222, column_name3='1993-10-03'WHERE coLUmn_NAME1='value1'' is being executed
+2016-12-17 20:39:31,136 DEBUG dbmsController.DbmsController (DbmsController.java:30) - Command  'UPDATE table_name8 SET COLUMN_NAME2=222222, column_name3='1993-10-03'WHERE coLUmn_NAME1='value1'' is being validated
+2016-12-17 20:39:31,138 DEBUG dbmsController.DbmsController (DbmsController.java:35) - Command  'UPDATE table_name8 SET COLUMN_NAME2=222222, column_name3='1993-10-03'WHERE coLUmn_NAME1='value1'' is being executed
+2016-12-17 20:39:31,139 DEBUG condition.ConditionFinder (ConditionFinder.java:63) - Where condirion is being checked and executed
+2016-12-17 20:39:31,139 DEBUG dbms.DataBaseMS (DataBaseMS.java:70) - Selecting columns : null  from table : table_name8
+2016-12-17 20:39:31,139 DEBUG dbms.DataBaseMS (DataBaseMS.java:103) - Updating columns : [COLUMN_NAME2, column_name3] with rows of numbers : [0, 1] with values : [222222, 1993-10-03]  from table : table_name8
+2016-12-17 20:39:31,140 DEBUG dbms.DataBaseMS (DataBaseMS.java:70) - Selecting columns : null  from table : table_name8
+2016-12-17 20:39:31,140 DEBUG jdbc.Statement (Statement.java:68) - Statement is being closed
+2016-12-17 20:39:31,140 DEBUG jdbc.Connection (Connection.java:53) - Connection is being closed
+2016-12-17 20:39:31,140 DEBUG jdbc.Statement (Statement.java:68) - Statement is being closed
+2016-12-17 20:39:31,141 DEBUG jdbc.Driver (Driver.java:59) - URL "jdbc:altdb://localhost" and Properties "{path=/tmp/jdbc/88968}" are being connected
+2016-12-17 20:39:31,141 DEBUG jdbc.Driver (Driver.java:40) - URL  "jdbc:altdb://localhost"  is being understood
+2016-12-17 20:39:31,141 DEBUG jdbc.Connection (Connection.java:64) - Statement is being created
+2016-12-17 20:39:31,142 DEBUG jdbc.Statement (Statement.java:76) - Command  'CREATE DATABASE TestDB_Create' is being executed
+2016-12-17 20:39:31,142 DEBUG dbmsController.DbmsController (DbmsController.java:30) - Command  'CREATE DATABASE TestDB_Create' is being validated
+2016-12-17 20:39:31,143 DEBUG dbmsController.DbmsController (DbmsController.java:35) - Command  'CREATE DATABASE TestDB_Create' is being executed
+2016-12-17 20:39:31,143 DEBUG dbms.DataBaseMS (DataBaseMS.java:110) - Creating database : TestDB_Create
+2016-12-17 20:39:31,143 DEBUG jdbc.Statement (Statement.java:76) - Command  'USE TestDB_Create' is being executed
+2016-12-17 20:39:31,143 DEBUG dbmsController.DbmsController (DbmsController.java:30) - Command  'USE TestDB_Create' is being validated
+2016-12-17 20:39:31,157 DEBUG dbmsController.DbmsController (DbmsController.java:35) - Command  'USE TestDB_Create' is being executed
+2016-12-17 20:39:31,157 DEBUG dbms.DataBaseMS (DataBaseMS.java:140) - Using database : TestDB_Create
+2016-12-17 20:39:31,157 DEBUG jdbc.Statement (Statement.java:68) - Statement is being closed
+2016-12-17 20:39:31,158 DEBUG jdbc.Connection (Connection.java:64) - Statement is being created
+2016-12-17 20:39:31,158 DEBUG jdbc.Statement (Statement.java:76) - Command  'CREATE TABLE table_name13(column_name1 varchar, column_name2 int, column_name3 varchar)' is being executed
+2016-12-17 20:39:31,158 DEBUG dbmsController.DbmsController (DbmsController.java:30) - Command  'CREATE TABLE table_name13(column_name1 varchar, column_name2 int, column_name3 varchar)' is being validated
+2016-12-17 20:39:31,159 DEBUG dbmsController.DbmsController (DbmsController.java:35) - Command  'CREATE TABLE table_name13(column_name1 varchar, column_name2 int, column_name3 varchar)' is being executed
+2016-12-17 20:39:31,159 DEBUG dbms.DataBaseMS (DataBaseMS.java:44) - Creating table : table_name13  with columns : [dbms.Column@21a947fe, dbms.Column@5606c0b, dbms.Column@80ec1f8]  in format :ALTDB
+2016-12-17 20:39:31,161 DEBUG jdbc.Statement (Statement.java:187) - Update command  'INSERT INTO table_name13(column_NAME1, COLUMN_name3, column_name2) VALUES ('value1', 'value3', 4)' is being executed
+2016-12-17 20:39:31,161 DEBUG dbmsController.DbmsController (DbmsController.java:30) - Command  'INSERT INTO table_name13(column_NAME1, COLUMN_name3, column_name2) VALUES ('value1', 'value3', 4)' is being validated
+2016-12-17 20:39:31,162 DEBUG dbmsController.DbmsController (DbmsController.java:35) - Command  'INSERT INTO table_name13(column_NAME1, COLUMN_name3, column_name2) VALUES ('value1', 'value3', 4)' is being executed
+2016-12-17 20:39:31,163 DEBUG dbms.DataBaseMS (DataBaseMS.java:32) - Inserting into table : table_name13  values : [value1, value3, 4]  in columns : [column_NAME1, COLUMN_name3, column_name2]
+2016-12-17 20:39:31,163 DEBUG dbms.DataBaseMS (DataBaseMS.java:70) - Selecting columns : null  from table : table_name13
+2016-12-17 20:39:31,164 DEBUG jdbc.Statement (Statement.java:76) - Command  'INSERT INTO table_name13(column_NAME1, column_name2, COLUMN_name3) VALUES ('value1', 8, 'value3')' is being executed
+2016-12-17 20:39:31,164 DEBUG dbmsController.DbmsController (DbmsController.java:30) - Command  'INSERT INTO table_name13(column_NAME1, column_name2, COLUMN_name3) VALUES ('value1', 8, 'value3')' is being validated
+2016-12-17 20:39:31,165 DEBUG dbmsController.DbmsController (DbmsController.java:35) - Command  'INSERT INTO table_name13(column_NAME1, column_name2, COLUMN_name3) VALUES ('value1', 8, 'value3')' is being executed
+2016-12-17 20:39:31,166 DEBUG dbms.DataBaseMS (DataBaseMS.java:32) - Inserting into table : table_name13  values : [value1, 8, value3]  in columns : [column_NAME1, column_name2, COLUMN_name3]
+2016-12-17 20:39:31,166 DEBUG dbms.DataBaseMS (DataBaseMS.java:70) - Selecting columns : null  from table : table_name13
+2016-12-17 20:39:31,167 DEBUG jdbc.Statement (Statement.java:187) - Update command  'INSERT INTO table_name13(column_name1, COLUMN_NAME3, column_NAME2) VALUES ('value2', 'value4', 5)' is being executed
+2016-12-17 20:39:31,167 DEBUG dbmsController.DbmsController (DbmsController.java:30) - Command  'INSERT INTO table_name13(column_name1, COLUMN_NAME3, column_NAME2) VALUES ('value2', 'value4', 5)' is being validated
+2016-12-17 20:39:31,168 DEBUG dbmsController.DbmsController (DbmsController.java:35) - Command  'INSERT INTO table_name13(column_name1, COLUMN_NAME3, column_NAME2) VALUES ('value2', 'value4', 5)' is being executed
+2016-12-17 20:39:31,168 DEBUG dbms.DataBaseMS (DataBaseMS.java:32) - Inserting into table : table_name13  values : [value2, value4, 5]  in columns : [column_name1, COLUMN_NAME3, column_NAME2]
+2016-12-17 20:39:31,172 DEBUG dbms.DataBaseMS (DataBaseMS.java:70) - Selecting columns : null  from table : table_name13
+2016-12-17 20:39:31,172 DEBUG jdbc.Statement (Statement.java:187) - Update command  'INSERT INTO table_name13(column_name1, COLUMN_NAME3, column_NAME2) VALUES ('value5', 'value6', 6)' is being executed
+2016-12-17 20:39:31,173 DEBUG dbmsController.DbmsController (DbmsController.java:30) - Command  'INSERT INTO table_name13(column_name1, COLUMN_NAME3, column_NAME2) VALUES ('value5', 'value6', 6)' is being validated
+2016-12-17 20:39:31,174 DEBUG dbmsController.DbmsController (DbmsController.java:35) - Command  'INSERT INTO table_name13(column_name1, COLUMN_NAME3, column_NAME2) VALUES ('value5', 'value6', 6)' is being executed
+2016-12-17 20:39:31,174 DEBUG dbms.DataBaseMS (DataBaseMS.java:32) - Inserting into table : table_name13  values : [value5, value6, 6]  in columns : [column_name1, COLUMN_NAME3, column_NAME2]
+2016-12-17 20:39:31,175 DEBUG dbms.DataBaseMS (DataBaseMS.java:70) - Selecting columns : null  from table : table_name13
+2016-12-17 20:39:31,175 DEBUG jdbc.Statement (Statement.java:76) - Command  'SELECT column_name1 FROM table_name13 WHERE coluMN_NAME2 = 8' is being executed
+2016-12-17 20:39:31,175 DEBUG dbmsController.DbmsController (DbmsController.java:30) - Command  'SELECT column_name1 FROM table_name13 WHERE coluMN_NAME2 = 8' is being validated
+2016-12-17 20:39:31,177 DEBUG dbmsController.DbmsController (DbmsController.java:35) - Command  'SELECT column_name1 FROM table_name13 WHERE coluMN_NAME2 = 8' is being executed
+2016-12-17 20:39:31,177 DEBUG condition.ConditionFinder (ConditionFinder.java:63) - Where condirion is being checked and executed
+2016-12-17 20:39:31,177 DEBUG dbms.DataBaseMS (DataBaseMS.java:70) - Selecting columns : null  from table : table_name13
+2016-12-17 20:39:31,178 DEBUG dbms.DataBaseMS (DataBaseMS.java:63) - Selecting columns : [column_name1] with rows of numbers : [1]  from table : table_name13
+2016-12-17 20:39:31,178 DEBUG jdbc.Statement (Statement.java:76) - Command  'SELECT column_name1 FROM table_name13 WHERE coluMN_NAME2 > 100' is being executed
+2016-12-17 20:39:31,178 DEBUG dbmsController.DbmsController (DbmsController.java:30) - Command  'SELECT column_name1 FROM table_name13 WHERE coluMN_NAME2 > 100' is being validated
+2016-12-17 20:39:31,179 DEBUG dbmsController.DbmsController (DbmsController.java:35) - Command  'SELECT column_name1 FROM table_name13 WHERE coluMN_NAME2 > 100' is being executed
+2016-12-17 20:39:31,179 DEBUG condition.ConditionFinder (ConditionFinder.java:63) - Where condirion is being checked and executed
+2016-12-17 20:39:31,179 DEBUG dbms.DataBaseMS (DataBaseMS.java:70) - Selecting columns : null  from table : table_name13
+2016-12-17 20:39:31,179 DEBUG dbms.DataBaseMS (DataBaseMS.java:63) - Selecting columns : [column_name1] with rows of numbers : []  from table : table_name13
+2016-12-17 20:39:31,179 DEBUG jdbc.ResultSet (ResultSet.java:136) - ResultSet is being closed
+2016-12-17 20:39:31,180 DEBUG jdbc.Statement (Statement.java:68) - Statement is being closed
+2016-12-17 20:39:31,180 DEBUG jdbc.Connection (Connection.java:53) - Connection is being closed
+2016-12-17 20:39:31,180 DEBUG jdbc.Statement (Statement.java:68) - Statement is being closed
+2016-12-17 20:39:31,180 DEBUG jdbc.Driver (Driver.java:59) - URL "jdbc:altdb://localhost" and Properties "{path=/tmp/jdbc/76542}" are being connected
+2016-12-17 20:39:31,180 DEBUG jdbc.Driver (Driver.java:40) - URL  "jdbc:altdb://localhost"  is being understood
+2016-12-17 20:39:31,181 DEBUG jdbc.Connection (Connection.java:64) - Statement is being created
+2016-12-17 20:39:31,181 DEBUG jdbc.Statement (Statement.java:76) - Command  'CREATE DATABASE TestDB_Create' is being executed
+2016-12-17 20:39:31,181 DEBUG dbmsController.DbmsController (DbmsController.java:30) - Command  'CREATE DATABASE TestDB_Create' is being validated
+2016-12-17 20:39:31,181 DEBUG dbmsController.DbmsController (DbmsController.java:35) - Command  'CREATE DATABASE TestDB_Create' is being executed
+2016-12-17 20:39:31,181 DEBUG dbms.DataBaseMS (DataBaseMS.java:110) - Creating database : TestDB_Create
+2016-12-17 20:39:31,182 DEBUG jdbc.Statement (Statement.java:76) - Command  'USE TestDB_Create' is being executed
+2016-12-17 20:39:31,182 DEBUG dbmsController.DbmsController (DbmsController.java:30) - Command  'USE TestDB_Create' is being validated
+2016-12-17 20:39:31,182 DEBUG dbmsController.DbmsController (DbmsController.java:35) - Command  'USE TestDB_Create' is being executed
+2016-12-17 20:39:31,182 DEBUG dbms.DataBaseMS (DataBaseMS.java:140) - Using database : TestDB_Create
+2016-12-17 20:39:31,183 DEBUG jdbc.Statement (Statement.java:68) - Statement is being closed
+2016-12-17 20:39:31,183 DEBUG jdbc.Connection (Connection.java:64) - Statement is being created
+2016-12-17 20:39:31,183 DEBUG jdbc.Statement (Statement.java:76) - Command  'CREATE TABLE table_name13(column_name1 varchar, column_name2 int, column_name3 varchar)' is being executed
+2016-12-17 20:39:31,183 DEBUG dbmsController.DbmsController (DbmsController.java:30) - Command  'CREATE TABLE table_name13(column_name1 varchar, column_name2 int, column_name3 varchar)' is being validated
+2016-12-17 20:39:31,183 DEBUG dbmsController.DbmsController (DbmsController.java:35) - Command  'CREATE TABLE table_name13(column_name1 varchar, column_name2 int, column_name3 varchar)' is being executed
+2016-12-17 20:39:31,184 DEBUG dbms.DataBaseMS (DataBaseMS.java:44) - Creating table : table_name13  with columns : [dbms.Column@1445d7f, dbms.Column@6a396c1e, dbms.Column@6c3f5566]  in format :ALTDB
+2016-12-17 20:39:31,185 DEBUG jdbc.Statement (Statement.java:187) - Update command  'INSERT INTO table_name13(column_NAME1, COLUMN_name3, column_name2) VALUES ('value1', 'value3', 4)' is being executed
+2016-12-17 20:39:31,186 DEBUG dbmsController.DbmsController (DbmsController.java:30) - Command  'INSERT INTO table_name13(column_NAME1, COLUMN_name3, column_name2) VALUES ('value1', 'value3', 4)' is being validated
+2016-12-17 20:39:31,187 DEBUG dbmsController.DbmsController (DbmsController.java:35) - Command  'INSERT INTO table_name13(column_NAME1, COLUMN_name3, column_name2) VALUES ('value1', 'value3', 4)' is being executed
+2016-12-17 20:39:31,187 DEBUG dbms.DataBaseMS (DataBaseMS.java:32) - Inserting into table : table_name13  values : [value1, value3, 4]  in columns : [column_NAME1, COLUMN_name3, column_name2]
+2016-12-17 20:39:31,188 DEBUG dbms.DataBaseMS (DataBaseMS.java:70) - Selecting columns : null  from table : table_name13
+2016-12-17 20:39:31,188 DEBUG jdbc.Statement (Statement.java:76) - Command  'INSERT INTO table_name13(column_NAME1, column_name2, COLUMN_name3) VALUES ('value1', 4, 'value5')' is being executed
+2016-12-17 20:39:31,188 DEBUG dbmsController.DbmsController (DbmsController.java:30) - Command  'INSERT INTO table_name13(column_NAME1, column_name2, COLUMN_name3) VALUES ('value1', 4, 'value5')' is being validated
+2016-12-17 20:39:31,189 DEBUG dbmsController.DbmsController (DbmsController.java:35) - Command  'INSERT INTO table_name13(column_NAME1, column_name2, COLUMN_name3) VALUES ('value1', 4, 'value5')' is being executed
+2016-12-17 20:39:31,190 DEBUG dbms.DataBaseMS (DataBaseMS.java:32) - Inserting into table : table_name13  values : [value1, 4, value5]  in columns : [column_NAME1, column_name2, COLUMN_name3]
+2016-12-17 20:39:31,190 DEBUG dbms.DataBaseMS (DataBaseMS.java:70) - Selecting columns : null  from table : table_name13
+2016-12-17 20:39:31,191 DEBUG jdbc.Statement (Statement.java:187) - Update command  'INSERT INTO table_name13(column_name1, COLUMN_NAME3, column_NAME2) VALUES ('value2', 'value4', 5)' is being executed
+2016-12-17 20:39:31,191 DEBUG dbmsController.DbmsController (DbmsController.java:30) - Command  'INSERT INTO table_name13(column_name1, COLUMN_NAME3, column_NAME2) VALUES ('value2', 'value4', 5)' is being validated
+2016-12-17 20:39:31,192 DEBUG dbmsController.DbmsController (DbmsController.java:35) - Command  'INSERT INTO table_name13(column_name1, COLUMN_NAME3, column_NAME2) VALUES ('value2', 'value4', 5)' is being executed
+2016-12-17 20:39:31,192 DEBUG dbms.DataBaseMS (DataBaseMS.java:32) - Inserting into table : table_name13  values : [value2, value4, 5]  in columns : [column_name1, COLUMN_NAME3, column_NAME2]
+2016-12-17 20:39:31,193 DEBUG dbms.DataBaseMS (DataBaseMS.java:70) - Selecting columns : null  from table : table_name13
+2016-12-17 20:39:31,193 DEBUG jdbc.Statement (Statement.java:187) - Update command  'INSERT INTO table_name13(column_name1, COLUMN_NAME3, column_NAME2) VALUES ('value5', 'value6', 6)' is being executed
+2016-12-17 20:39:31,193 DEBUG dbmsController.DbmsController (DbmsController.java:30) - Command  'INSERT INTO table_name13(column_name1, COLUMN_NAME3, column_NAME2) VALUES ('value5', 'value6', 6)' is being validated
+2016-12-17 20:39:31,194 DEBUG dbmsController.DbmsController (DbmsController.java:35) - Command  'INSERT INTO table_name13(column_name1, COLUMN_NAME3, column_NAME2) VALUES ('value5', 'value6', 6)' is being executed
+2016-12-17 20:39:31,194 DEBUG dbms.DataBaseMS (DataBaseMS.java:32) - Inserting into table : table_name13  values : [value5, value6, 6]  in columns : [column_name1, COLUMN_NAME3, column_NAME2]
+2016-12-17 20:39:31,195 DEBUG dbms.DataBaseMS (DataBaseMS.java:70) - Selecting columns : null  from table : table_name13
+2016-12-17 20:39:31,195 DEBUG jdbc.Statement (Statement.java:76) - Command  'ALTER TABLE table_name13 ADD column_name4 date' is being executed
+2016-12-17 20:39:31,195 DEBUG dbmsController.DbmsController (DbmsController.java:30) - Command  'ALTER TABLE table_name13 ADD column_name4 date' is being validated
+2016-12-17 20:39:31,196 DEBUG dbmsController.DbmsController (DbmsController.java:35) - Command  'ALTER TABLE table_name13 ADD column_name4 date' is being executed
+2016-12-17 20:39:31,196 DEBUG dbms.DataBaseMS (DataBaseMS.java:50) - Altering 'add' columns : [dbms.Column@12405818]  in table : table_name13
+2016-12-17 20:39:31,197 DEBUG dbms.DataBaseMS (DataBaseMS.java:70) - Selecting columns : null  from table : table_name13
+2016-12-17 20:39:31,197 DEBUG jdbc.Statement (Statement.java:76) - Command  'SELECT * from table_name13 WHERE coluMN_NAME2 = 5;' is being executed
+2016-12-17 20:39:31,197 DEBUG dbmsController.DbmsController (DbmsController.java:30) - Command  'SELECT * from table_name13 WHERE coluMN_NAME2 = 5;' is being validated
+2016-12-17 20:39:31,198 DEBUG dbmsController.DbmsController (DbmsController.java:35) - Command  'SELECT * from table_name13 WHERE coluMN_NAME2 = 5;' is being executed
+2016-12-17 20:39:31,198 DEBUG condition.ConditionFinder (ConditionFinder.java:63) - Where condirion is being checked and executed
+2016-12-17 20:39:31,198 DEBUG dbms.DataBaseMS (DataBaseMS.java:70) - Selecting columns : null  from table : table_name13
+2016-12-17 20:39:31,199 DEBUG dbms.DataBaseMS (DataBaseMS.java:63) - Selecting columns : null with rows of numbers : [2]  from table : table_name13
+2016-12-17 20:39:31,199 DEBUG jdbc.Statement (Statement.java:68) - Statement is being closed
+2016-12-17 20:39:31,199 DEBUG jdbc.Connection (Connection.java:53) - Connection is being closed
+2016-12-17 20:39:31,199 DEBUG jdbc.Statement (Statement.java:68) - Statement is being closed
+2016-12-17 20:39:31,200 DEBUG jdbc.Driver (Driver.java:59) - URL "jdbc:altdb://localhost" and Properties "{path=/tmp/jdbc/18611}" are being connected
+2016-12-17 20:39:31,200 DEBUG jdbc.Driver (Driver.java:40) - URL  "jdbc:altdb://localhost"  is being understood
+2016-12-17 20:39:31,201 DEBUG jdbc.Connection (Connection.java:64) - Statement is being created
+2016-12-17 20:39:31,201 DEBUG jdbc.Statement (Statement.java:76) - Command  'CREATE DATABASE TestDB_Create' is being executed
+2016-12-17 20:39:31,201 DEBUG dbmsController.DbmsController (DbmsController.java:30) - Command  'CREATE DATABASE TestDB_Create' is being validated
+2016-12-17 20:39:31,202 DEBUG dbmsController.DbmsController (DbmsController.java:35) - Command  'CREATE DATABASE TestDB_Create' is being executed
+2016-12-17 20:39:31,202 DEBUG dbms.DataBaseMS (DataBaseMS.java:110) - Creating database : TestDB_Create
+2016-12-17 20:39:31,202 DEBUG jdbc.Statement (Statement.java:76) - Command  'USE TestDB_Create' is being executed
+2016-12-17 20:39:31,202 DEBUG dbmsController.DbmsController (DbmsController.java:30) - Command  'USE TestDB_Create' is being validated
+2016-12-17 20:39:31,203 DEBUG dbmsController.DbmsController (DbmsController.java:35) - Command  'USE TestDB_Create' is being executed
+2016-12-17 20:39:31,203 DEBUG dbms.DataBaseMS (DataBaseMS.java:140) - Using database : TestDB_Create
+2016-12-17 20:39:31,204 DEBUG jdbc.Statement (Statement.java:68) - Statement is being closed
+2016-12-17 20:39:31,204 DEBUG jdbc.Connection (Connection.java:64) - Statement is being created
+2016-12-17 20:39:31,204 DEBUG jdbc.Statement (Statement.java:76) - Command  'CREATE TABLE table_name9(column_name1 varchar, column_name2 int,column_name3 varchar)' is being executed
+2016-12-17 20:39:31,204 DEBUG dbmsController.DbmsController (DbmsController.java:30) - Command  'CREATE TABLE table_name9(column_name1 varchar, column_name2 int,column_name3 varchar)' is being validated
+2016-12-17 20:39:31,205 DEBUG dbmsController.DbmsController (DbmsController.java:35) - Command  'CREATE TABLE table_name9(column_name1 varchar, column_name2 int,column_name3 varchar)' is being executed
+2016-12-17 20:39:31,205 DEBUG dbms.DataBaseMS (DataBaseMS.java:44) - Creating table : table_name9  with columns : [dbms.Column@314c508a, dbms.Column@10b48321, dbms.Column@6b67034]  in format :ALTDB
+2016-12-17 20:39:31,207 DEBUG jdbc.Statement (Statement.java:187) - Update command  'UPDATE table_name9 SET column_name1='value1', column_name2=15,column_name3='value2'' is being executed
+2016-12-17 20:39:31,207 DEBUG dbmsController.DbmsController (DbmsController.java:30) - Command  'UPDATE table_name9 SET column_name1='value1', column_name2=15,column_name3='value2'' is being validated
+2016-12-17 20:39:31,208 DEBUG dbmsController.DbmsController (DbmsController.java:35) - Command  'UPDATE table_name9 SET column_name1='value1', column_name2=15,column_name3='value2'' is being executed
+2016-12-17 20:39:31,208 DEBUG dbms.DataBaseMS (DataBaseMS.java:70) - Selecting columns : null  from table : table_name9
+2016-12-17 20:39:31,209 DEBUG dbms.DataBaseMS (DataBaseMS.java:96) - Updating columns : [column_name1, column_name2, column_name3] with values : [value1, 15, value2]  in table : table_name9
+2016-12-17 20:39:31,209 DEBUG dbms.DataBaseMS (DataBaseMS.java:70) - Selecting columns : null  from table : table_name9
+2016-12-17 20:39:31,209 DEBUG jdbc.Statement (Statement.java:68) - Statement is being closed
+2016-12-17 20:39:31,210 DEBUG jdbc.Connection (Connection.java:64) - Statement is being created
+2016-12-17 20:39:31,210 DEBUG jdbc.Statement (Statement.java:187) - Update command  'UPDATE wrong_table_name9 SET column_name1='value1', column_name2=15,column_name3='value2'' is being executed
+2016-12-17 20:39:31,210 DEBUG dbmsController.DbmsController (DbmsController.java:30) - Command  'UPDATE wrong_table_name9 SET column_name1='value1', column_name2=15,column_name3='value2'' is being validated
+2016-12-17 20:39:31,211 FATAL dbmsController.Controller (Controller.java:359) - Command  'UPDATE wrong_table_name9 SET column_name1='value1', column_name2=15,column_name3='value2'' is not valid
+2016-12-17 20:39:31,212 DEBUG jdbc.Connection (Connection.java:53) - Connection is being closed
+2016-12-17 20:39:31,212 DEBUG jdbc.Statement (Statement.java:68) - Statement is being closed
+2016-12-17 20:39:31,213 DEBUG jdbc.Driver (Driver.java:59) - URL "jdbc:altdb://localhost" and Properties "{path=/tmp/jdbc/4044}" are being connected
+2016-12-17 20:39:31,213 DEBUG jdbc.Driver (Driver.java:40) - URL  "jdbc:altdb://localhost"  is being understood
+2016-12-17 20:39:31,213 DEBUG jdbc.Connection (Connection.java:64) - Statement is being created
+2016-12-17 20:39:31,213 DEBUG jdbc.Statement (Statement.java:76) - Command  'CREATE DATABASE TestDB_Create' is being executed
+2016-12-17 20:39:31,213 DEBUG dbmsController.DbmsController (DbmsController.java:30) - Command  'CREATE DATABASE TestDB_Create' is being validated
+2016-12-17 20:39:31,214 DEBUG dbmsController.DbmsController (DbmsController.java:35) - Command  'CREATE DATABASE TestDB_Create' is being executed
+2016-12-17 20:39:31,214 DEBUG dbms.DataBaseMS (DataBaseMS.java:110) - Creating database : TestDB_Create
+2016-12-17 20:39:31,214 DEBUG jdbc.Statement (Statement.java:76) - Command  'USE TestDB_Create' is being executed
+2016-12-17 20:39:31,214 DEBUG dbmsController.DbmsController (DbmsController.java:30) - Command  'USE TestDB_Create' is being validated
+2016-12-17 20:39:31,215 DEBUG dbmsController.DbmsController (DbmsController.java:35) - Command  'USE TestDB_Create' is being executed
+2016-12-17 20:39:31,215 DEBUG dbms.DataBaseMS (DataBaseMS.java:140) - Using database : TestDB_Create
+2016-12-17 20:39:31,215 DEBUG jdbc.Statement (Statement.java:68) - Statement is being closed
+2016-12-17 20:39:31,215 DEBUG jdbc.Connection (Connection.java:64) - Statement is being created
+2016-12-17 20:39:31,216 DEBUG jdbc.Statement (Statement.java:76) - Command  'CREATE TABLE table_name1(column_name1 varchar, column_name2 int, column_name3 date)' is being executed
+2016-12-17 20:39:31,216 DEBUG dbmsController.DbmsController (DbmsController.java:30) - Command  'CREATE TABLE table_name1(column_name1 varchar, column_name2 int, column_name3 date)' is being validated
+2016-12-17 20:39:31,216 DEBUG dbmsController.DbmsController (DbmsController.java:35) - Command  'CREATE TABLE table_name1(column_name1 varchar, column_name2 int, column_name3 date)' is being executed
+2016-12-17 20:39:31,217 DEBUG dbms.DataBaseMS (DataBaseMS.java:44) - Creating table : table_name1  with columns : [dbms.Column@453da22c, dbms.Column@71248c21, dbms.Column@442675e1]  in format :ALTDB
+2016-12-17 20:39:31,218 DEBUG jdbc.Statement (Statement.java:68) - Statement is being closed
+2016-12-17 20:39:31,218 DEBUG jdbc.Connection (Connection.java:64) - Statement is being created
+2016-12-17 20:39:31,219 DEBUG jdbc.Statement (Statement.java:76) - Command  'CREATE TABLE table_name1(column_name1 varchar, column_name2 int, column_name3 date)' is being executed
+2016-12-17 20:39:31,219 DEBUG dbmsController.DbmsController (DbmsController.java:30) - Command  'CREATE TABLE table_name1(column_name1 varchar, column_name2 int, column_name3 date)' is being validated
+2016-12-17 20:39:31,219 DEBUG dbmsController.DbmsController (DbmsController.java:35) - Command  'CREATE TABLE table_name1(column_name1 varchar, column_name2 int, column_name3 date)' is being executed
+2016-12-17 20:39:31,220 DEBUG dbms.DataBaseMS (DataBaseMS.java:44) - Creating table : table_name1  with columns : [dbms.Column@6166e06f, dbms.Column@49e202ad, dbms.Column@1c72da34]  in format :ALTDB
+2016-12-17 20:39:31,220 FATAL dbms.DataBase (DataBase.java:126) - Table table_name1 already exist
+2016-12-17 20:39:31,220 DEBUG jdbc.Connection (Connection.java:64) - Statement is being created
+2016-12-17 20:39:31,220 DEBUG jdbc.Statement (Statement.java:76) - Command  'CREATE TABLE incomplete_table_name1' is being executed
+2016-12-17 20:39:31,221 DEBUG dbmsController.DbmsController (DbmsController.java:30) - Command  'CREATE TABLE incomplete_table_name1' is being validated
+2016-12-17 20:39:31,221 FATAL dbmsController.Controller (Controller.java:359) - Command  'CREATE TABLE incomplete_table_name1' is not valid
+2016-12-17 20:39:31,222 DEBUG jdbc.Connection (Connection.java:53) - Connection is being closed
+2016-12-17 20:39:31,222 DEBUG jdbc.Statement (Statement.java:68) - Statement is being closed
+2016-12-17 20:39:31,222 DEBUG jdbc.Driver (Driver.java:59) - URL "jdbc:altdb://localhost" and Properties "{path=/tmp/jdbc/43328}" are being connected
+2016-12-17 20:39:31,222 DEBUG jdbc.Driver (Driver.java:40) - URL  "jdbc:altdb://localhost"  is being understood
+2016-12-17 20:39:31,223 DEBUG jdbc.Connection (Connection.java:64) - Statement is being created
+2016-12-17 20:39:31,223 DEBUG jdbc.Statement (Statement.java:76) - Command  'CREATE DATABASE TestDB_Create' is being executed
+2016-12-17 20:39:31,223 DEBUG dbmsController.DbmsController (DbmsController.java:30) - Command  'CREATE DATABASE TestDB_Create' is being validated
+2016-12-17 20:39:31,224 DEBUG dbmsController.DbmsController (DbmsController.java:35) - Command  'CREATE DATABASE TestDB_Create' is being executed
+2016-12-17 20:39:31,224 DEBUG dbms.DataBaseMS (DataBaseMS.java:110) - Creating database : TestDB_Create
+2016-12-17 20:39:31,225 DEBUG jdbc.Statement (Statement.java:76) - Command  'USE TestDB_Create' is being executed
+2016-12-17 20:39:31,225 DEBUG dbmsController.DbmsController (DbmsController.java:30) - Command  'USE TestDB_Create' is being validated
+2016-12-17 20:39:31,225 DEBUG dbmsController.DbmsController (DbmsController.java:35) - Command  'USE TestDB_Create' is being executed
+2016-12-17 20:39:31,226 DEBUG dbms.DataBaseMS (DataBaseMS.java:140) - Using database : TestDB_Create
+2016-12-17 20:39:31,226 DEBUG jdbc.Statement (Statement.java:68) - Statement is being closed
+2016-12-17 20:39:31,226 DEBUG jdbc.Connection (Connection.java:64) - Statement is being created
+2016-12-17 20:39:31,226 DEBUG jdbc.Statement (Statement.java:76) - Command  'CREATE TABLE table_name3(column_name1 varchar, column_name2 int,column_name3 float)' is being executed
+2016-12-17 20:39:31,226 DEBUG dbmsController.DbmsController (DbmsController.java:30) - Command  'CREATE TABLE table_name3(column_name1 varchar, column_name2 int,column_name3 float)' is being validated
+2016-12-17 20:39:31,226 DEBUG dbmsController.DbmsController (DbmsController.java:35) - Command  'CREATE TABLE table_name3(column_name1 varchar, column_name2 int,column_name3 float)' is being executed
+2016-12-17 20:39:31,227 DEBUG dbms.DataBaseMS (DataBaseMS.java:44) - Creating table : table_name3  with columns : [dbms.Column@6b0c2d26, dbms.Column@3d3fcdb0, dbms.Column@641147d0]  in format :ALTDB
+2016-12-17 20:39:31,228 DEBUG jdbc.Statement (Statement.java:187) - Update command  'INSERT INTO table_name3 VALUES ('value1', 3, 1.3)' is being executed
+2016-12-17 20:39:31,228 DEBUG dbmsController.DbmsController (DbmsController.java:30) - Command  'INSERT INTO table_name3 VALUES ('value1', 3, 1.3)' is being validated
+2016-12-17 20:39:31,229 DEBUG dbmsController.DbmsController (DbmsController.java:35) - Command  'INSERT INTO table_name3 VALUES ('value1', 3, 1.3)' is being executed
+2016-12-17 20:39:31,229 DEBUG dbms.DataBaseMS (DataBaseMS.java:38) - Inserting into table : table_name3  values : [value1, 3, 1.3]
+2016-12-17 20:39:31,229 DEBUG dbms.DataBaseMS (DataBaseMS.java:70) - Selecting columns : null  from table : table_name3
+2016-12-17 20:39:31,230 DEBUG jdbc.Statement (Statement.java:68) - Statement is being closed
+2016-12-17 20:39:31,230 DEBUG jdbc.Connection (Connection.java:53) - Connection is being closed
+2016-12-17 20:39:31,230 DEBUG jdbc.Statement (Statement.java:68) - Statement is being closed
+2016-12-17 20:39:31,230 DEBUG jdbc.Driver (Driver.java:59) - URL "jdbc:altdb://localhost" and Properties "{path=/tmp/jdbc/35317}" are being connected
+2016-12-17 20:39:31,230 DEBUG jdbc.Driver (Driver.java:40) - URL  "jdbc:altdb://localhost"  is being understood
+2016-12-17 20:39:31,230 DEBUG jdbc.Connection (Connection.java:64) - Statement is being created
+2016-12-17 20:39:31,231 DEBUG jdbc.Statement (Statement.java:76) - Command  'CREATE DATABASE TestDB_Create' is being executed
+2016-12-17 20:39:31,231 DEBUG dbmsController.DbmsController (DbmsController.java:30) - Command  'CREATE DATABASE TestDB_Create' is being validated
+2016-12-17 20:39:31,231 DEBUG dbmsController.DbmsController (DbmsController.java:35) - Command  'CREATE DATABASE TestDB_Create' is being executed
+2016-12-17 20:39:31,231 DEBUG dbms.DataBaseMS (DataBaseMS.java:110) - Creating database : TestDB_Create
+2016-12-17 20:39:31,232 DEBUG jdbc.Statement (Statement.java:76) - Command  'USE TestDB_Create' is being executed
+2016-12-17 20:39:31,232 DEBUG dbmsController.DbmsController (DbmsController.java:30) - Command  'USE TestDB_Create' is being validated
+2016-12-17 20:39:31,233 DEBUG dbmsController.DbmsController (DbmsController.java:35) - Command  'USE TestDB_Create' is being executed
+2016-12-17 20:39:31,233 DEBUG dbms.DataBaseMS (DataBaseMS.java:140) - Using database : TestDB_Create
+2016-12-17 20:39:31,233 DEBUG jdbc.Statement (Statement.java:68) - Statement is being closed
+2016-12-17 20:39:31,233 DEBUG jdbc.Connection (Connection.java:64) - Statement is being created
+2016-12-17 20:39:31,233 DEBUG jdbc.Statement (Statement.java:76) - Command  'CREATE TABLE table_name13(column_name1 varchar, column_name2 int, column_name3 varchar)' is being executed
+2016-12-17 20:39:31,233 DEBUG dbmsController.DbmsController (DbmsController.java:30) - Command  'CREATE TABLE table_name13(column_name1 varchar, column_name2 int, column_name3 varchar)' is being validated
+2016-12-17 20:39:31,234 DEBUG dbmsController.DbmsController (DbmsController.java:35) - Command  'CREATE TABLE table_name13(column_name1 varchar, column_name2 int, column_name3 varchar)' is being executed
+2016-12-17 20:39:31,235 DEBUG dbms.DataBaseMS (DataBaseMS.java:44) - Creating table : table_name13  with columns : [dbms.Column@6e38921c, dbms.Column@64d7f7e0, dbms.Column@27c6e487]  in format :ALTDB
+2016-12-17 20:39:31,236 DEBUG jdbc.Statement (Statement.java:187) - Update command  'INSERT INTO table_name13(column_NAME1, COLUMN_name3, column_name2) VALUES ('value1', 'value3', 4)' is being executed
+2016-12-17 20:39:31,236 DEBUG dbmsController.DbmsController (DbmsController.java:30) - Command  'INSERT INTO table_name13(column_NAME1, COLUMN_name3, column_name2) VALUES ('value1', 'value3', 4)' is being validated
+2016-12-17 20:39:31,237 DEBUG dbmsController.DbmsController (DbmsController.java:35) - Command  'INSERT INTO table_name13(column_NAME1, COLUMN_name3, column_name2) VALUES ('value1', 'value3', 4)' is being executed
+2016-12-17 20:39:31,237 DEBUG dbms.DataBaseMS (DataBaseMS.java:32) - Inserting into table : table_name13  values : [value1, value3, 4]  in columns : [column_NAME1, COLUMN_name3, column_name2]
+2016-12-17 20:39:31,238 DEBUG dbms.DataBaseMS (DataBaseMS.java:70) - Selecting columns : null  from table : table_name13
+2016-12-17 20:39:31,238 DEBUG jdbc.Statement (Statement.java:76) - Command  'INSERT INTO table_name13(column_NAME1, column_name2, COLUMN_name3) VALUES ('value1', 4, 'value5')' is being executed
+2016-12-17 20:39:31,238 DEBUG dbmsController.DbmsController (DbmsController.java:30) - Command  'INSERT INTO table_name13(column_NAME1, column_name2, COLUMN_name3) VALUES ('value1', 4, 'value5')' is being validated
+2016-12-17 20:39:31,239 DEBUG dbmsController.DbmsController (DbmsController.java:35) - Command  'INSERT INTO table_name13(column_NAME1, column_name2, COLUMN_name3) VALUES ('value1', 4, 'value5')' is being executed
+2016-12-17 20:39:31,239 DEBUG dbms.DataBaseMS (DataBaseMS.java:32) - Inserting into table : table_name13  values : [value1, 4, value5]  in columns : [column_NAME1, column_name2, COLUMN_name3]
+2016-12-17 20:39:31,240 DEBUG dbms.DataBaseMS (DataBaseMS.java:70) - Selecting columns : null  from table : table_name13
+2016-12-17 20:39:31,240 DEBUG jdbc.Statement (Statement.java:187) - Update command  'INSERT INTO table_name13(column_name1, COLUMN_NAME3, column_NAME2) VALUES ('value2', 'value4', 5)' is being executed
+2016-12-17 20:39:31,240 DEBUG dbmsController.DbmsController (DbmsController.java:30) - Command  'INSERT INTO table_name13(column_name1, COLUMN_NAME3, column_NAME2) VALUES ('value2', 'value4', 5)' is being validated
+2016-12-17 20:39:31,241 DEBUG dbmsController.DbmsController (DbmsController.java:35) - Command  'INSERT INTO table_name13(column_name1, COLUMN_NAME3, column_NAME2) VALUES ('value2', 'value4', 5)' is being executed
+2016-12-17 20:39:31,241 DEBUG dbms.DataBaseMS (DataBaseMS.java:32) - Inserting into table : table_name13  values : [value2, value4, 5]  in columns : [column_name1, COLUMN_NAME3, column_NAME2]
+2016-12-17 20:39:31,242 DEBUG dbms.DataBaseMS (DataBaseMS.java:70) - Selecting columns : null  from table : table_name13
+2016-12-17 20:39:31,242 DEBUG jdbc.Statement (Statement.java:187) - Update command  'INSERT INTO table_name13(column_name1, COLUMN_NAME3, column_NAME2) VALUES ('value5', 'value6', 6)' is being executed
+2016-12-17 20:39:31,242 DEBUG dbmsController.DbmsController (DbmsController.java:30) - Command  'INSERT INTO table_name13(column_name1, COLUMN_NAME3, column_NAME2) VALUES ('value5', 'value6', 6)' is being validated
+2016-12-17 20:39:31,243 DEBUG dbmsController.DbmsController (DbmsController.java:35) - Command  'INSERT INTO table_name13(column_name1, COLUMN_NAME3, column_NAME2) VALUES ('value5', 'value6', 6)' is being executed
+2016-12-17 20:39:31,243 DEBUG dbms.DataBaseMS (DataBaseMS.java:32) - Inserting into table : table_name13  values : [value5, value6, 6]  in columns : [column_name1, COLUMN_NAME3, column_NAME2]
+2016-12-17 20:39:31,244 DEBUG dbms.DataBaseMS (DataBaseMS.java:70) - Selecting columns : null  from table : table_name13
+2016-12-17 20:39:31,244 DEBUG jdbc.Statement (Statement.java:76) - Command  'SELECT DISTINCT column_name2 FROM table_name13' is being executed
+2016-12-17 20:39:31,244 DEBUG dbmsController.DbmsController (DbmsController.java:30) - Command  'SELECT DISTINCT column_name2 FROM table_name13' is being validated
+2016-12-17 20:39:31,245 DEBUG dbmsController.DbmsController (DbmsController.java:35) - Command  'SELECT DISTINCT column_name2 FROM table_name13' is being executed
+2016-12-17 20:39:31,245 DEBUG dbms.DataBaseMS (DataBaseMS.java:76) - Selecting distinct columns : [column_name2]  from table : table_name13
+2016-12-17 20:39:31,246 DEBUG jdbc.Statement (Statement.java:76) - Command  'SELECT DISTINCT column_name2, column_name3 FROM table_name13 WHERE coluMN_NAME2 < 5' is being executed
+2016-12-17 20:39:31,246 DEBUG dbmsController.DbmsController (DbmsController.java:30) - Command  'SELECT DISTINCT column_name2, column_name3 FROM table_name13 WHERE coluMN_NAME2 < 5' is being validated
+2016-12-17 20:39:31,247 DEBUG dbmsController.DbmsController (DbmsController.java:35) - Command  'SELECT DISTINCT column_name2, column_name3 FROM table_name13 WHERE coluMN_NAME2 < 5' is being executed
+2016-12-17 20:39:31,247 DEBUG condition.ConditionFinder (ConditionFinder.java:63) - Where condirion is being checked and executed
+2016-12-17 20:39:31,247 DEBUG dbms.DataBaseMS (DataBaseMS.java:70) - Selecting columns : null  from table : table_name13
+2016-12-17 20:39:31,247 DEBUG dbms.DataBaseMS (DataBaseMS.java:83) - Selecting distinct columns : [column_name2, column_name3] with rows of numbers : [0, 1]  from table : table_name13
+2016-12-17 20:39:31,248 DEBUG jdbc.ResultSet (ResultSet.java:136) - ResultSet is being closed
+2016-12-17 20:39:31,248 DEBUG jdbc.Statement (Statement.java:68) - Statement is being closed
+2016-12-17 20:39:31,248 DEBUG jdbc.Connection (Connection.java:53) - Connection is being closed
+2016-12-17 20:39:31,248 DEBUG jdbc.Statement (Statement.java:68) - Statement is being closed
+2016-12-17 20:39:31,249 DEBUG jdbc.Driver (Driver.java:59) - URL "jdbc:altdb://localhost" and Properties "{path=/tmp/jdbc/31155}" are being connected
+2016-12-17 20:39:31,249 DEBUG jdbc.Driver (Driver.java:40) - URL  "jdbc:altdb://localhost"  is being understood
+2016-12-17 20:39:31,249 DEBUG jdbc.Connection (Connection.java:64) - Statement is being created
+2016-12-17 20:39:31,249 DEBUG jdbc.Statement (Statement.java:76) - Command  'CREATE DATABASE TestDB_Create' is being executed
+2016-12-17 20:39:31,250 DEBUG dbmsController.DbmsController (DbmsController.java:30) - Command  'CREATE DATABASE TestDB_Create' is being validated
+2016-12-17 20:39:31,250 DEBUG dbmsController.DbmsController (DbmsController.java:35) - Command  'CREATE DATABASE TestDB_Create' is being executed
+2016-12-17 20:39:31,251 DEBUG dbms.DataBaseMS (DataBaseMS.java:110) - Creating database : TestDB_Create
+2016-12-17 20:39:31,251 DEBUG jdbc.Statement (Statement.java:76) - Command  'USE TestDB_Create' is being executed
+2016-12-17 20:39:31,251 DEBUG dbmsController.DbmsController (DbmsController.java:30) - Command  'USE TestDB_Create' is being validated
+2016-12-17 20:39:31,252 DEBUG dbmsController.DbmsController (DbmsController.java:35) - Command  'USE TestDB_Create' is being executed
+2016-12-17 20:39:31,252 DEBUG dbms.DataBaseMS (DataBaseMS.java:140) - Using database : TestDB_Create
+2016-12-17 20:39:31,252 DEBUG jdbc.Statement (Statement.java:68) - Statement is being closed
+2016-12-17 20:39:31,252 DEBUG jdbc.Connection (Connection.java:64) - Statement is being created
+2016-12-17 20:39:31,252 DEBUG jdbc.Statement (Statement.java:76) - Command  'CREATE TABLE table_name10(column_name1 varchar, column_name2 int,column_name3 date)' is being executed
+2016-12-17 20:39:31,253 DEBUG dbmsController.DbmsController (DbmsController.java:30) - Command  'CREATE TABLE table_name10(column_name1 varchar, column_name2 int,column_name3 date)' is being validated
+2016-12-17 20:39:31,253 DEBUG dbmsController.DbmsController (DbmsController.java:35) - Command  'CREATE TABLE table_name10(column_name1 varchar, column_name2 int,column_name3 date)' is being executed
+2016-12-17 20:39:31,254 DEBUG dbms.DataBaseMS (DataBaseMS.java:44) - Creating table : table_name10  with columns : [dbms.Column@49070868, dbms.Column@6385cb26, dbms.Column@38364841]  in format :ALTDB
+2016-12-17 20:39:31,255 DEBUG jdbc.Statement (Statement.java:187) - Update command  'INSERT INTO table_name10(column_NAME1, COLUMN_name3, column_name2) VALUES ('value1', '2011-01-25', 4)' is being executed
+2016-12-17 20:39:31,255 DEBUG dbmsController.DbmsController (DbmsController.java:30) - Command  'INSERT INTO table_name10(column_NAME1, COLUMN_name3, column_name2) VALUES ('value1', '2011-01-25', 4)' is being validated
+2016-12-17 20:39:31,256 DEBUG dbmsController.DbmsController (DbmsController.java:35) - Command  'INSERT INTO table_name10(column_NAME1, COLUMN_name3, column_name2) VALUES ('value1', '2011-01-25', 4)' is being executed
+2016-12-17 20:39:31,256 DEBUG dbms.DataBaseMS (DataBaseMS.java:32) - Inserting into table : table_name10  values : [value1, 2011-01-25, 4]  in columns : [column_NAME1, COLUMN_name3, column_name2]
+2016-12-17 20:39:31,257 DEBUG dbms.DataBaseMS (DataBaseMS.java:70) - Selecting columns : null  from table : table_name10
+2016-12-17 20:39:31,258 DEBUG jdbc.Statement (Statement.java:187) - Update command  'INSERT INTO table_name10(column_NAME1, COLUMN_name3, column_name2) VALUES ('value1', '2011-01-28', 4)' is being executed
+2016-12-17 20:39:31,258 DEBUG dbmsController.DbmsController (DbmsController.java:30) - Command  'INSERT INTO table_name10(column_NAME1, COLUMN_name3, column_name2) VALUES ('value1', '2011-01-28', 4)' is being validated
+2016-12-17 20:39:31,258 DEBUG dbmsController.DbmsController (DbmsController.java:35) - Command  'INSERT INTO table_name10(column_NAME1, COLUMN_name3, column_name2) VALUES ('value1', '2011-01-28', 4)' is being executed
+2016-12-17 20:39:31,259 DEBUG dbms.DataBaseMS (DataBaseMS.java:32) - Inserting into table : table_name10  values : [value1, 2011-01-28, 4]  in columns : [column_NAME1, COLUMN_name3, column_name2]
+2016-12-17 20:39:31,260 DEBUG dbms.DataBaseMS (DataBaseMS.java:70) - Selecting columns : null  from table : table_name10
+2016-12-17 20:39:31,260 DEBUG jdbc.Statement (Statement.java:187) - Update command  'INSERT INTO table_name10(column_name1, COLUMN_NAME3, column_NAME2) VALUES ('value2', '2011-02-11', 5)' is being executed
+2016-12-17 20:39:31,260 DEBUG dbmsController.DbmsController (DbmsController.java:30) - Command  'INSERT INTO table_name10(column_name1, COLUMN_NAME3, column_NAME2) VALUES ('value2', '2011-02-11', 5)' is being validated
+2016-12-17 20:39:31,261 DEBUG dbmsController.DbmsController (DbmsController.java:35) - Command  'INSERT INTO table_name10(column_name1, COLUMN_NAME3, column_NAME2) VALUES ('value2', '2011-02-11', 5)' is being executed
+2016-12-17 20:39:31,261 DEBUG dbms.DataBaseMS (DataBaseMS.java:32) - Inserting into table : table_name10  values : [value2, 2011-02-11, 5]  in columns : [column_name1, COLUMN_NAME3, column_NAME2]
+2016-12-17 20:39:31,262 DEBUG dbms.DataBaseMS (DataBaseMS.java:70) - Selecting columns : null  from table : table_name10
+2016-12-17 20:39:31,262 DEBUG jdbc.Statement (Statement.java:187) - Update command  'DELETE From table_name10' is being executed
+2016-12-17 20:39:31,262 DEBUG dbmsController.DbmsController (DbmsController.java:30) - Command  'DELETE From table_name10' is being validated
+2016-12-17 20:39:31,263 DEBUG dbmsController.DbmsController (DbmsController.java:35) - Command  'DELETE From table_name10' is being executed
+2016-12-17 20:39:31,263 DEBUG dbms.DataBaseMS (DataBaseMS.java:140) - Using database : TestDB_Create
+2016-12-17 20:39:31,263 DEBUG dbms.DataBaseMS (DataBaseMS.java:70) - Selecting columns : null  from table : table_name10
+2016-12-17 20:39:31,264 DEBUG dbms.DataBaseMS (DataBaseMS.java:90) - Deleting rows of numbers : null  from table : table_name10
+2016-12-17 20:39:31,264 DEBUG dbms.DataBaseMS (DataBaseMS.java:70) - Selecting columns : null  from table : table_name10
+2016-12-17 20:39:31,264 DEBUG jdbc.Statement (Statement.java:68) - Statement is being closed
+2016-12-17 20:39:31,264 DEBUG jdbc.Connection (Connection.java:53) - Connection is being closed
+2016-12-17 20:39:31,265 DEBUG jdbc.Statement (Statement.java:68) - Statement is being closed
+2016-12-17 20:39:31,265 DEBUG jdbc.Driver (Driver.java:59) - URL "jdbc:altdb://localhost" and Properties "{path=/tmp/jdbc/74533}" are being connected
+2016-12-17 20:39:31,265 DEBUG jdbc.Driver (Driver.java:40) - URL  "jdbc:altdb://localhost"  is being understood
+2016-12-17 20:39:31,266 DEBUG jdbc.Connection (Connection.java:64) - Statement is being created
+2016-12-17 20:39:31,266 DEBUG jdbc.Statement (Statement.java:76) - Command  'CREATE DATABASE TestDB_Create' is being executed
+2016-12-17 20:39:31,266 DEBUG dbmsController.DbmsController (DbmsController.java:30) - Command  'CREATE DATABASE TestDB_Create' is being validated
+2016-12-17 20:39:31,266 DEBUG dbmsController.DbmsController (DbmsController.java:35) - Command  'CREATE DATABASE TestDB_Create' is being executed
+2016-12-17 20:39:31,267 DEBUG dbms.DataBaseMS (DataBaseMS.java:110) - Creating database : TestDB_Create
+2016-12-17 20:39:31,267 DEBUG jdbc.Statement (Statement.java:76) - Command  'USE TestDB_Create' is being executed
+2016-12-17 20:39:31,267 DEBUG dbmsController.DbmsController (DbmsController.java:30) - Command  'USE TestDB_Create' is being validated
+2016-12-17 20:39:31,268 DEBUG dbmsController.DbmsController (DbmsController.java:35) - Command  'USE TestDB_Create' is being executed
+2016-12-17 20:39:31,268 DEBUG dbms.DataBaseMS (DataBaseMS.java:140) - Using database : TestDB_Create
+2016-12-17 20:39:31,268 DEBUG jdbc.Statement (Statement.java:68) - Statement is being closed
+2016-12-17 20:39:31,268 DEBUG jdbc.Connection (Connection.java:64) - Statement is being created
+2016-12-17 20:39:31,268 DEBUG jdbc.Statement (Statement.java:76) - Command  'CREATE TABLE table_name4(column_name1 varchar, column_name2 int,column_name3 date)' is being executed
+2016-12-17 20:39:31,269 DEBUG dbmsController.DbmsController (DbmsController.java:30) - Command  'CREATE TABLE table_name4(column_name1 varchar, column_name2 int,column_name3 date)' is being validated
+2016-12-17 20:39:31,269 DEBUG dbmsController.DbmsController (DbmsController.java:35) - Command  'CREATE TABLE table_name4(column_name1 varchar, column_name2 int,column_name3 date)' is being executed
+2016-12-17 20:39:31,270 DEBUG dbms.DataBaseMS (DataBaseMS.java:44) - Creating table : table_name4  with columns : [dbms.Column@28c4711c, dbms.Column@59717824, dbms.Column@146044d7]  in format :ALTDB
+2016-12-17 20:39:31,271 DEBUG jdbc.Statement (Statement.java:187) - Update command  'INSERT INTO table_name4(column_NAME1, COLUMN_name3, column_name2) VALUES('value1', '2011-01-25', 4)' is being executed
+2016-12-17 20:39:31,271 DEBUG dbmsController.DbmsController (DbmsController.java:30) - Command  'INSERT INTO table_name4(column_NAME1, COLUMN_name3, column_name2) VALUES('value1', '2011-01-25', 4)' is being validated
+2016-12-17 20:39:31,272 DEBUG dbmsController.DbmsController (DbmsController.java:35) - Command  'INSERT INTO table_name4(column_NAME1, COLUMN_name3, column_name2) VALUES('value1', '2011-01-25', 4)' is being executed
+2016-12-17 20:39:31,272 DEBUG dbms.DataBaseMS (DataBaseMS.java:32) - Inserting into table : table_name4  values : [value1, 2011-01-25, 4]  in columns : [column_NAME1, COLUMN_name3, column_name2]
+2016-12-17 20:39:31,273 DEBUG dbms.DataBaseMS (DataBaseMS.java:70) - Selecting columns : null  from table : table_name4
+2016-12-17 20:39:31,273 DEBUG jdbc.Statement (Statement.java:68) - Statement is being closed
+2016-12-17 20:39:31,273 DEBUG jdbc.Connection (Connection.java:53) - Connection is being closed
+2016-12-17 20:39:31,273 DEBUG jdbc.Statement (Statement.java:68) - Statement is being closed
+2016-12-17 20:39:31,274 DEBUG jdbc.Driver (Driver.java:59) - URL "jdbc:altdb://localhost" and Properties "{path=/tmp/jdbc/68106}" are being connected
+2016-12-17 20:39:31,274 DEBUG jdbc.Driver (Driver.java:40) - URL  "jdbc:altdb://localhost"  is being understood
+2016-12-17 20:39:31,274 DEBUG jdbc.Connection (Connection.java:64) - Statement is being created
+2016-12-17 20:39:31,275 DEBUG jdbc.Statement (Statement.java:76) - Command  'CREATE DATABASE TestDB_Create' is being executed
+2016-12-17 20:39:31,275 DEBUG dbmsController.DbmsController (DbmsController.java:30) - Command  'CREATE DATABASE TestDB_Create' is being validated
+2016-12-17 20:39:31,275 DEBUG dbmsController.DbmsController (DbmsController.java:35) - Command  'CREATE DATABASE TestDB_Create' is being executed
+2016-12-17 20:39:31,275 DEBUG dbms.DataBaseMS (DataBaseMS.java:110) - Creating database : TestDB_Create
+2016-12-17 20:39:31,276 DEBUG jdbc.Statement (Statement.java:76) - Command  'USE TestDB_Create' is being executed
+2016-12-17 20:39:31,276 DEBUG dbmsController.DbmsController (DbmsController.java:30) - Command  'USE TestDB_Create' is being validated
+2016-12-17 20:39:31,276 DEBUG dbmsController.DbmsController (DbmsController.java:35) - Command  'USE TestDB_Create' is being executed
+2016-12-17 20:39:31,277 DEBUG dbms.DataBaseMS (DataBaseMS.java:140) - Using database : TestDB_Create
+2016-12-17 20:39:31,277 DEBUG jdbc.Statement (Statement.java:68) - Statement is being closed
+2016-12-17 20:39:31,277 DEBUG jdbc.Connection (Connection.java:64) - Statement is being created
+2016-12-17 20:39:31,277 DEBUG jdbc.Statement (Statement.java:76) - Command  'CREATE TABLE table_name12(column_name1 varchar, column_name2 int,column_name3 varchar)' is being executed
+2016-12-17 20:39:31,277 DEBUG dbmsController.DbmsController (DbmsController.java:30) - Command  'CREATE TABLE table_name12(column_name1 varchar, column_name2 int,column_name3 varchar)' is being validated
+2016-12-17 20:39:31,278 DEBUG dbmsController.DbmsController (DbmsController.java:35) - Command  'CREATE TABLE table_name12(column_name1 varchar, column_name2 int,column_name3 varchar)' is being executed
+2016-12-17 20:39:31,278 DEBUG dbms.DataBaseMS (DataBaseMS.java:44) - Creating table : table_name12  with columns : [dbms.Column@1e9e725a, dbms.Column@15d9bc04, dbms.Column@473b46c3]  in format :ALTDB
+2016-12-17 20:39:31,280 DEBUG jdbc.Statement (Statement.java:187) - Update command  'INSERT INTO table_name12(column_NAME1, COLUMN_name3, column_name2) VALUES ('value1', 'value3', 4)' is being executed
+2016-12-17 20:39:31,280 DEBUG dbmsController.DbmsController (DbmsController.java:30) - Command  'INSERT INTO table_name12(column_NAME1, COLUMN_name3, column_name2) VALUES ('value1', 'value3', 4)' is being validated
+2016-12-17 20:39:31,280 DEBUG dbmsController.DbmsController (DbmsController.java:35) - Command  'INSERT INTO table_name12(column_NAME1, COLUMN_name3, column_name2) VALUES ('value1', 'value3', 4)' is being executed
+2016-12-17 20:39:31,281 DEBUG dbms.DataBaseMS (DataBaseMS.java:32) - Inserting into table : table_name12  values : [value1, value3, 4]  in columns : [column_NAME1, COLUMN_name3, column_name2]
+2016-12-17 20:39:31,281 DEBUG dbms.DataBaseMS (DataBaseMS.java:70) - Selecting columns : null  from table : table_name12
+2016-12-17 20:39:31,281 DEBUG jdbc.Statement (Statement.java:187) - Update command  'INSERT INTO table_name12(column_NAME1, COLUMN_name3, column_name2) VALUES ('value1', 'value3', 4)' is being executed
+2016-12-17 20:39:31,282 DEBUG dbmsController.DbmsController (DbmsController.java:30) - Command  'INSERT INTO table_name12(column_NAME1, COLUMN_name3, column_name2) VALUES ('value1', 'value3', 4)' is being validated
+2016-12-17 20:39:31,282 DEBUG dbmsController.DbmsController (DbmsController.java:35) - Command  'INSERT INTO table_name12(column_NAME1, COLUMN_name3, column_name2) VALUES ('value1', 'value3', 4)' is being executed
+2016-12-17 20:39:31,282 DEBUG dbms.DataBaseMS (DataBaseMS.java:32) - Inserting into table : table_name12  values : [value1, value3, 4]  in columns : [column_NAME1, COLUMN_name3, column_name2]
+2016-12-17 20:39:31,283 DEBUG dbms.DataBaseMS (DataBaseMS.java:70) - Selecting columns : null  from table : table_name12
+2016-12-17 20:39:31,283 DEBUG jdbc.Statement (Statement.java:187) - Update command  'INSERT INTO table_name12(column_name1, COLUMN_NAME3, column_NAME2) VALUES ('value2', 'value4', 5)' is being executed
+2016-12-17 20:39:31,283 DEBUG dbmsController.DbmsController (DbmsController.java:30) - Command  'INSERT INTO table_name12(column_name1, COLUMN_NAME3, column_NAME2) VALUES ('value2', 'value4', 5)' is being validated
+2016-12-17 20:39:31,284 DEBUG dbmsController.DbmsController (DbmsController.java:35) - Command  'INSERT INTO table_name12(column_name1, COLUMN_NAME3, column_NAME2) VALUES ('value2', 'value4', 5)' is being executed
+2016-12-17 20:39:31,284 DEBUG dbms.DataBaseMS (DataBaseMS.java:32) - Inserting into table : table_name12  values : [value2, value4, 5]  in columns : [column_name1, COLUMN_NAME3, column_NAME2]
+2016-12-17 20:39:31,285 DEBUG dbms.DataBaseMS (DataBaseMS.java:70) - Selecting columns : null  from table : table_name12
+2016-12-17 20:39:31,285 DEBUG jdbc.Statement (Statement.java:187) - Update command  'INSERT INTO table_name12(column_name1, COLUMN_NAME3, column_NAME2) VALUES ('value5', 'value6', 6)' is being executed
+2016-12-17 20:39:31,285 DEBUG dbmsController.DbmsController (DbmsController.java:30) - Command  'INSERT INTO table_name12(column_name1, COLUMN_NAME3, column_NAME2) VALUES ('value5', 'value6', 6)' is being validated
+2016-12-17 20:39:31,286 DEBUG dbmsController.DbmsController (DbmsController.java:35) - Command  'INSERT INTO table_name12(column_name1, COLUMN_NAME3, column_NAME2) VALUES ('value5', 'value6', 6)' is being executed
+2016-12-17 20:39:31,286 DEBUG dbms.DataBaseMS (DataBaseMS.java:32) - Inserting into table : table_name12  values : [value5, value6, 6]  in columns : [column_name1, COLUMN_NAME3, column_NAME2]
+2016-12-17 20:39:31,287 DEBUG dbms.DataBaseMS (DataBaseMS.java:70) - Selecting columns : null  from table : table_name12
+2016-12-17 20:39:31,287 DEBUG jdbc.Statement (Statement.java:159) - Query 'SELECT * From table_name12' is being executed
+2016-12-17 20:39:31,287 DEBUG dbmsController.DbmsController (DbmsController.java:30) - Command  'SELECT * From table_name12' is being validated
+2016-12-17 20:39:31,287 DEBUG dbmsController.DbmsController (DbmsController.java:35) - Command  'SELECT * From table_name12' is being executed
+2016-12-17 20:39:31,288 DEBUG dbms.DataBaseMS (DataBaseMS.java:70) - Selecting columns : null  from table : table_name12
+2016-12-17 20:39:31,288 DEBUG jdbc.Statement (Statement.java:68) - Statement is being closed
+2016-12-17 20:39:31,288 DEBUG jdbc.Connection (Connection.java:53) - Connection is being closed
+2016-12-17 20:39:31,288 DEBUG jdbc.Statement (Statement.java:68) - Statement is being closed
+2016-12-17 20:39:31,289 DEBUG jdbc.Driver (Driver.java:59) - URL "jdbc:altdb://localhost" and Properties "{path=/tmp/jdbc/94}" are being connected
+2016-12-17 20:39:31,289 DEBUG jdbc.Driver (Driver.java:40) - URL  "jdbc:altdb://localhost"  is being understood
+2016-12-17 20:39:31,289 DEBUG jdbc.Connection (Connection.java:64) - Statement is being created
+2016-12-17 20:39:31,289 DEBUG jdbc.Statement (Statement.java:76) - Command  'CREATE DATABASE TestDB_Create' is being executed
+2016-12-17 20:39:31,290 DEBUG dbmsController.DbmsController (DbmsController.java:30) - Command  'CREATE DATABASE TestDB_Create' is being validated
+2016-12-17 20:39:31,290 DEBUG dbmsController.DbmsController (DbmsController.java:35) - Command  'CREATE DATABASE TestDB_Create' is being executed
+2016-12-17 20:39:31,290 DEBUG dbms.DataBaseMS (DataBaseMS.java:110) - Creating database : TestDB_Create
+2016-12-17 20:39:31,291 DEBUG jdbc.Statement (Statement.java:76) - Command  'USE TestDB_Create' is being executed
+2016-12-17 20:39:31,291 DEBUG dbmsController.DbmsController (DbmsController.java:30) - Command  'USE TestDB_Create' is being validated
+2016-12-17 20:39:31,291 DEBUG dbmsController.DbmsController (DbmsController.java:35) - Command  'USE TestDB_Create' is being executed
+2016-12-17 20:39:31,291 DEBUG dbms.DataBaseMS (DataBaseMS.java:140) - Using database : TestDB_Create
+2016-12-17 20:39:31,291 DEBUG jdbc.Statement (Statement.java:68) - Statement is being closed
+2016-12-17 20:39:31,292 DEBUG jdbc.Connection (Connection.java:64) - Statement is being created
+2016-12-17 20:39:31,292 DEBUG jdbc.Statement (Statement.java:76) - Command  'CREATE TABLE table_name7(column_name1 varchar, column_name2 int,column_name3 varchar)' is being executed
+2016-12-17 20:39:31,292 DEBUG dbmsController.DbmsController (DbmsController.java:30) - Command  'CREATE TABLE table_name7(column_name1 varchar, column_name2 int,column_name3 varchar)' is being validated
+2016-12-17 20:39:31,292 DEBUG dbmsController.DbmsController (DbmsController.java:35) - Command  'CREATE TABLE table_name7(column_name1 varchar, column_name2 int,column_name3 varchar)' is being executed
+2016-12-17 20:39:31,293 DEBUG dbms.DataBaseMS (DataBaseMS.java:44) - Creating table : table_name7  with columns : [dbms.Column@516be40f, dbms.Column@3c0a50da, dbms.Column@646be2c3]  in format :ALTDB
+2016-12-17 20:39:31,294 DEBUG jdbc.Statement (Statement.java:187) - Update command  'INSERT INTO table_name7(column_NAME1, COLUMN_name3, column_name2) VALUES('value1', 'value3', 4)' is being executed
+2016-12-17 20:39:31,294 DEBUG dbmsController.DbmsController (DbmsController.java:30) - Command  'INSERT INTO table_name7(column_NAME1, COLUMN_name3, column_name2) VALUES('value1', 'value3', 4)' is being validated
+2016-12-17 20:39:31,295 DEBUG dbmsController.DbmsController (DbmsController.java:35) - Command  'INSERT INTO table_name7(column_NAME1, COLUMN_name3, column_name2) VALUES('value1', 'value3', 4)' is being executed
+2016-12-17 20:39:31,295 DEBUG dbms.DataBaseMS (DataBaseMS.java:32) - Inserting into table : table_name7  values : [value1, value3, 4]  in columns : [column_NAME1, COLUMN_name3, column_name2]
+2016-12-17 20:39:31,296 DEBUG dbms.DataBaseMS (DataBaseMS.java:70) - Selecting columns : null  from table : table_name7
+2016-12-17 20:39:31,296 DEBUG jdbc.Statement (Statement.java:187) - Update command  'INSERT INTO table_name7(column_NAME1, COLUMN_name3, column_name2) VALUES('value1', 'value3', 4)' is being executed
+2016-12-17 20:39:31,296 DEBUG dbmsController.DbmsController (DbmsController.java:30) - Command  'INSERT INTO table_name7(column_NAME1, COLUMN_name3, column_name2) VALUES('value1', 'value3', 4)' is being validated
+2016-12-17 20:39:31,296 DEBUG dbmsController.DbmsController (DbmsController.java:35) - Command  'INSERT INTO table_name7(column_NAME1, COLUMN_name3, column_name2) VALUES('value1', 'value3', 4)' is being executed
+2016-12-17 20:39:31,297 DEBUG dbms.DataBaseMS (DataBaseMS.java:32) - Inserting into table : table_name7  values : [value1, value3, 4]  in columns : [column_NAME1, COLUMN_name3, column_name2]
+2016-12-17 20:39:31,297 DEBUG dbms.DataBaseMS (DataBaseMS.java:70) - Selecting columns : null  from table : table_name7
+2016-12-17 20:39:31,297 DEBUG jdbc.Statement (Statement.java:187) - Update command  'INSERT INTO table_name7(column_name1, COLUMN_NAME3, column_NAME2) VALUES ('value2', 'value4', 5)' is being executed
+2016-12-17 20:39:31,298 DEBUG dbmsController.DbmsController (DbmsController.java:30) - Command  'INSERT INTO table_name7(column_name1, COLUMN_NAME3, column_NAME2) VALUES ('value2', 'value4', 5)' is being validated
+2016-12-17 20:39:31,298 DEBUG dbmsController.DbmsController (DbmsController.java:35) - Command  'INSERT INTO table_name7(column_name1, COLUMN_NAME3, column_NAME2) VALUES ('value2', 'value4', 5)' is being executed
+2016-12-17 20:39:31,298 DEBUG dbms.DataBaseMS (DataBaseMS.java:32) - Inserting into table : table_name7  values : [value2, value4, 5]  in columns : [column_name1, COLUMN_NAME3, column_NAME2]
+2016-12-17 20:39:31,299 DEBUG dbms.DataBaseMS (DataBaseMS.java:70) - Selecting columns : null  from table : table_name7
+2016-12-17 20:39:31,299 DEBUG jdbc.Statement (Statement.java:187) - Update command  'UPDATE table_name7 SET column_name1='1111111111', COLUMN_NAME2=2222222,column_name3='333333333'' is being executed
+2016-12-17 20:39:31,299 DEBUG dbmsController.DbmsController (DbmsController.java:30) - Command  'UPDATE table_name7 SET column_name1='1111111111', COLUMN_NAME2=2222222,column_name3='333333333'' is being validated
+2016-12-17 20:39:31,300 DEBUG dbmsController.DbmsController (DbmsController.java:35) - Command  'UPDATE table_name7 SET column_name1='1111111111', COLUMN_NAME2=2222222,column_name3='333333333'' is being executed
+2016-12-17 20:39:31,300 DEBUG dbms.DataBaseMS (DataBaseMS.java:70) - Selecting columns : null  from table : table_name7
+2016-12-17 20:39:31,300 DEBUG dbms.DataBaseMS (DataBaseMS.java:96) - Updating columns : [column_name1, COLUMN_NAME2, column_name3] with values : [1111111111, 2222222, 333333333]  in table : table_name7
+2016-12-17 20:39:31,301 DEBUG dbms.DataBaseMS (DataBaseMS.java:70) - Selecting columns : null  from table : table_name7
+2016-12-17 20:39:31,301 DEBUG jdbc.Statement (Statement.java:68) - Statement is being closed
+2016-12-17 20:39:31,301 DEBUG jdbc.Connection (Connection.java:53) - Connection is being closed
+2016-12-17 20:39:31,301 DEBUG jdbc.Statement (Statement.java:68) - Statement is being closed
+2016-12-17 20:39:31,302 DEBUG jdbc.Driver (Driver.java:59) - URL "jdbc:altdb://localhost" and Properties "{path=/tmp/jdbc/23087}" are being connected
+2016-12-17 20:39:31,302 DEBUG jdbc.Driver (Driver.java:40) - URL  "jdbc:altdb://localhost"  is being understood
+2016-12-17 20:39:31,302 DEBUG jdbc.Connection (Connection.java:64) - Statement is being created
+2016-12-17 20:39:31,303 DEBUG jdbc.Statement (Statement.java:76) - Command  'CREATE DATABASE TestDB_Create' is being executed
+2016-12-17 20:39:31,303 DEBUG dbmsController.DbmsController (DbmsController.java:30) - Command  'CREATE DATABASE TestDB_Create' is being validated
+2016-12-17 20:39:31,303 DEBUG dbmsController.DbmsController (DbmsController.java:35) - Command  'CREATE DATABASE TestDB_Create' is being executed
+2016-12-17 20:39:31,303 DEBUG dbms.DataBaseMS (DataBaseMS.java:110) - Creating database : TestDB_Create
+2016-12-17 20:39:31,304 DEBUG jdbc.Statement (Statement.java:76) - Command  'USE TestDB_Create' is being executed
+2016-12-17 20:39:31,304 DEBUG dbmsController.DbmsController (DbmsController.java:30) - Command  'USE TestDB_Create' is being validated
+2016-12-17 20:39:31,304 DEBUG dbmsController.DbmsController (DbmsController.java:35) - Command  'USE TestDB_Create' is being executed
+2016-12-17 20:39:31,304 DEBUG dbms.DataBaseMS (DataBaseMS.java:140) - Using database : TestDB_Create
+2016-12-17 20:39:31,305 DEBUG jdbc.Statement (Statement.java:68) - Statement is being closed
+2016-12-17 20:39:31,305 DEBUG jdbc.Connection (Connection.java:64) - Statement is being created
+2016-12-17 20:39:31,305 DEBUG jdbc.Statement (Statement.java:76) - Command  'CREATE TABLE table_name5(column_name1 varchar, column_name2 int,column_name3 varchar)' is being executed
+2016-12-17 20:39:31,305 DEBUG dbmsController.DbmsController (DbmsController.java:30) - Command  'CREATE TABLE table_name5(column_name1 varchar, column_name2 int,column_name3 varchar)' is being validated
+2016-12-17 20:39:31,306 DEBUG dbmsController.DbmsController (DbmsController.java:35) - Command  'CREATE TABLE table_name5(column_name1 varchar, column_name2 int,column_name3 varchar)' is being executed
+2016-12-17 20:39:31,306 DEBUG dbms.DataBaseMS (DataBaseMS.java:44) - Creating table : table_name5  with columns : [dbms.Column@797badd3, dbms.Column@77be656f, dbms.Column@19dc67c2]  in format :ALTDB
+2016-12-17 20:39:31,313 DEBUG jdbc.Driver (Driver.java:59) - URL "jdbc:altdb://localhost" and Properties "{path=/tmp/jdbc/77573}" are being connected
+2016-12-17 20:39:31,313 DEBUG jdbc.Driver (Driver.java:40) - URL  "jdbc:altdb://localhost"  is being understood
+2016-12-17 20:39:31,314 DEBUG jdbc.Connection (Connection.java:64) - Statement is being created
+2016-12-17 20:39:31,314 DEBUG jdbc.Statement (Statement.java:76) - Command  'CREATE DATABASE TestDB_Create' is being executed
+2016-12-17 20:39:31,314 DEBUG dbmsController.DbmsController (DbmsController.java:30) - Command  'CREATE DATABASE TestDB_Create' is being validated
+2016-12-17 20:39:31,315 DEBUG dbmsController.DbmsController (DbmsController.java:35) - Command  'CREATE DATABASE TestDB_Create' is being executed
+2016-12-17 20:39:31,315 DEBUG dbms.DataBaseMS (DataBaseMS.java:110) - Creating database : TestDB_Create
+2016-12-17 20:39:31,315 DEBUG jdbc.Statement (Statement.java:76) - Command  'USE TestDB_Create' is being executed
+2016-12-17 20:39:31,316 DEBUG dbmsController.DbmsController (DbmsController.java:30) - Command  'USE TestDB_Create' is being validated
+2016-12-17 20:39:31,316 DEBUG dbmsController.DbmsController (DbmsController.java:35) - Command  'USE TestDB_Create' is being executed
+2016-12-17 20:39:31,316 DEBUG dbms.DataBaseMS (DataBaseMS.java:140) - Using database : TestDB_Create
+2016-12-17 20:39:31,316 DEBUG jdbc.Statement (Statement.java:68) - Statement is being closed
+2016-12-17 20:39:31,317 DEBUG jdbc.Connection (Connection.java:64) - Statement is being created
+2016-12-17 20:39:31,317 DEBUG jdbc.Statement (Statement.java:76) - Command  'CREATE TABLE table_name11(column_name1 varchar, column_name2 int,column_name3 DATE)' is being executed
+2016-12-17 20:39:31,322 DEBUG dbmsController.DbmsController (DbmsController.java:30) - Command  'CREATE TABLE table_name11(column_name1 varchar, column_name2 int,column_name3 DATE)' is being validated
+2016-12-17 20:39:31,325 DEBUG dbmsController.DbmsController (DbmsController.java:35) - Command  'CREATE TABLE table_name11(column_name1 varchar, column_name2 int,column_name3 DATE)' is being executed
+2016-12-17 20:39:31,326 DEBUG dbms.DataBaseMS (DataBaseMS.java:44) - Creating table : table_name11  with columns : [dbms.Column@5d20e46, dbms.Column@709ba3fb, dbms.Column@3d36e4cd]  in format :ALTDB
+2016-12-17 20:39:31,327 DEBUG jdbc.Statement (Statement.java:187) - Update command  'INSERT INTO table_name11(column_NAME1, COLUMN_name3, column_name2) VALUES ('value1', '2011-01-25', 4)' is being executed
+2016-12-17 20:39:31,327 DEBUG dbmsController.DbmsController (DbmsController.java:30) - Command  'INSERT INTO table_name11(column_NAME1, COLUMN_name3, column_name2) VALUES ('value1', '2011-01-25', 4)' is being validated
+2016-12-17 20:39:31,328 DEBUG dbmsController.DbmsController (DbmsController.java:35) - Command  'INSERT INTO table_name11(column_NAME1, COLUMN_name3, column_name2) VALUES ('value1', '2011-01-25', 4)' is being executed
+2016-12-17 20:39:31,328 DEBUG dbms.DataBaseMS (DataBaseMS.java:32) - Inserting into table : table_name11  values : [value1, 2011-01-25, 4]  in columns : [column_NAME1, COLUMN_name3, column_name2]
+2016-12-17 20:39:31,329 DEBUG dbms.DataBaseMS (DataBaseMS.java:70) - Selecting columns : null  from table : table_name11
+2016-12-17 20:39:31,329 DEBUG jdbc.Statement (Statement.java:187) - Update command  'INSERT INTO table_name11(column_NAME1, COLUMN_name3, column_name2) VALUES ('value1', '2013-06-30', 4)' is being executed
+2016-12-17 20:39:31,329 DEBUG dbmsController.DbmsController (DbmsController.java:30) - Command  'INSERT INTO table_name11(column_NAME1, COLUMN_name3, column_name2) VALUES ('value1', '2013-06-30', 4)' is being validated
+2016-12-17 20:39:31,330 DEBUG dbmsController.DbmsController (DbmsController.java:35) - Command  'INSERT INTO table_name11(column_NAME1, COLUMN_name3, column_name2) VALUES ('value1', '2013-06-30', 4)' is being executed
+2016-12-17 20:39:31,330 DEBUG dbms.DataBaseMS (DataBaseMS.java:32) - Inserting into table : table_name11  values : [value1, 2013-06-30, 4]  in columns : [column_NAME1, COLUMN_name3, column_name2]
+2016-12-17 20:39:31,331 DEBUG dbms.DataBaseMS (DataBaseMS.java:70) - Selecting columns : null  from table : table_name11
+2016-12-17 20:39:31,331 DEBUG jdbc.Statement (Statement.java:187) - Update command  'INSERT INTO table_name11(column_name1, COLUMN_NAME3, column_NAME2) VALUES ('value2', '2013-07-03', 5)' is being executed
+2016-12-17 20:39:31,331 DEBUG dbmsController.DbmsController (DbmsController.java:30) - Command  'INSERT INTO table_name11(column_name1, COLUMN_NAME3, column_NAME2) VALUES ('value2', '2013-07-03', 5)' is being validated
+2016-12-17 20:39:31,331 DEBUG dbmsController.DbmsController (DbmsController.java:35) - Command  'INSERT INTO table_name11(column_name1, COLUMN_NAME3, column_NAME2) VALUES ('value2', '2013-07-03', 5)' is being executed
+2016-12-17 20:39:31,332 DEBUG dbms.DataBaseMS (DataBaseMS.java:32) - Inserting into table : table_name11  values : [value2, 2013-07-03, 5]  in columns : [column_name1, COLUMN_NAME3, column_NAME2]
+2016-12-17 20:39:31,332 DEBUG dbms.DataBaseMS (DataBaseMS.java:70) - Selecting columns : null  from table : table_name11
+2016-12-17 20:39:31,332 DEBUG jdbc.Statement (Statement.java:187) - Update command  'DELETE From table_name11 WHERE coLUmn_NAME3>'2011-01-25'' is being executed
+2016-12-17 20:39:31,332 DEBUG dbmsController.DbmsController (DbmsController.java:30) - Command  'DELETE From table_name11 WHERE coLUmn_NAME3>'2011-01-25'' is being validated
+2016-12-17 20:39:31,332 DEBUG dbmsController.DbmsController (DbmsController.java:35) - Command  'DELETE From table_name11 WHERE coLUmn_NAME3>'2011-01-25'' is being executed
+2016-12-17 20:39:31,332 DEBUG dbms.DataBaseMS (DataBaseMS.java:140) - Using database : TestDB_Create
+2016-12-17 20:39:31,333 DEBUG condition.ConditionFinder (ConditionFinder.java:63) - Where condirion is being checked and executed
+2016-12-17 20:39:31,333 DEBUG dbms.DataBaseMS (DataBaseMS.java:70) - Selecting columns : null  from table : table_name11
+2016-12-17 20:39:31,333 DEBUG dbms.DataBaseMS (DataBaseMS.java:90) - Deleting rows of numbers : [1, 2]  from table : table_name11
+2016-12-17 20:39:31,333 DEBUG dbms.DataBaseMS (DataBaseMS.java:70) - Selecting columns : null  from table : table_name11
+2016-12-17 20:39:31,333 DEBUG jdbc.Statement (Statement.java:68) - Statement is being closed
+2016-12-17 20:39:31,334 DEBUG jdbc.Connection (Connection.java:53) - Connection is being closed
+2016-12-17 20:39:31,334 DEBUG jdbc.Statement (Statement.java:68) - Statement is being closed
+>>>>>>> refs/remotes/origin/omaar
