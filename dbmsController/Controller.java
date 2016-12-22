@@ -101,17 +101,17 @@ public class Controller {
 	}
 
 	private void printFormatedTable(List<Column> list) {
-		// for (int i = 0; i < list.size(); i++) {
-		// System.out.print(list.get(i).getName() + "\t");
-		// }
-		// ArrayList<String> subList = list.get(0).getColElements();
-		// for (int j = 0; j < subList.size(); j++) {
-		// System.out.println();
-		// for (int i = 0; i < list.size(); i++) {
-		// System.out.print(list.get(i).getColElements().get(j) + "\t");
-		// }
-		// }
-		// System.out.println();
+		for (int i = 0; i < list.size(); i++) {
+			System.out.print(list.get(i).getName() + "\t");
+		}
+		ArrayList<String> subList = list.get(0).getColElements();
+		for (int j = 0; j < subList.size(); j++) {
+			System.out.println();
+			for (int i = 0; i < list.size(); i++) {
+				System.out.print(list.get(i).getColElements().get(j) + "\t");
+			}
+		}
+		System.out.println();
 	}
 
 	private void selectFromTable() throws SQLException {
